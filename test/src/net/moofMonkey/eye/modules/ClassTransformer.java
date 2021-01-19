@@ -80,9 +80,7 @@ public class ClassTransformer extends Thread implements ClassFileTransformer {
 							if(fMethod.getLongName().endsWith("(java.lang.String)") && "String".equals(fMethod.getReturnType().getSimpleName())) {
 								
 //								fMethod.insertAfter("System.out.println($1);");
-//								fMethod.insertAfter("if($_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = \"_MYSD_"+cl.getSimpleName()+"\";\n" +"}");
-//								fMethod.insertAfter("if($_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = \"_MYSD_\"+ClassNameGen.get($1);\n" +"}");
-								fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = \"_mysd\";\n" +"}");
+								fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = \"_updateMe\";\n" +"}");
 								flag = true;
 							}else if(fMethod.getLongName().endsWith("()") && "String".equals(fMethod.getReturnType().getSimpleName())) {
 								//fMethod.insertAfter("System.out.println($_);");
