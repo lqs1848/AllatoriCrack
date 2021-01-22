@@ -3,6 +3,12 @@
 
 allatori的使用方法 官方的demo里都有 而且是 .bat 的 双击运行就把jar加密混淆了 并且搭配Maven插件可以完全不影响原有的编译逻辑
 
+https://www.52pojie.cn/thread-1354106-1-1.html 这里有我用的配置xml和maven插件  搭配 我自己写的
+
+[小工具]: https://github.com/lqs1848/PublishTools
+
+可以实现 springboot 一键编译后加密混淆并发布到linux服务器上运行
+
 
 
 基于当前最新的 7.6版本
