@@ -64,12 +64,19 @@ public class Main {
 									&& "String".equals(fMethod.getReturnType().getSimpleName())) {
 								//随机名称
 								//fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = RandomName.get($1);\n" +"}");
+								//↑↑↑暂不可用↑↑↑
+
+								//替换掉下面 \"Lqs1848\" 这几个字  替换为 \"你想要取的名字\"
+								//注意 不能以 下划线开头 最好类似 ALLATORIxDEMO 这样的结构 大写开头
+								//否则生成出来的 jar 在加密某些类的时候会丢失部分逻辑
+
 								//固定名称
-								fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" + "$_ = \"_lqs1848\";\n" + "}");
+								fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" + "$_ = \"Lqs1848\";\n" + "}");
 								needRewriteFlag = true;
 							} else if (fMethod.getLongName().endsWith("()")
 									&& "String".equals(fMethod.getReturnType().getSimpleName())) {
 
+								//这里随便替换 看你心情 爱打印什么打印什么
 								String code = "String s = \"\";"
 										+ "s += \"################################################\\n\"; "
 										+ "s += \"#                                              #\\n\"; "
