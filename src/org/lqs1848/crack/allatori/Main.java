@@ -17,6 +17,28 @@ public class Main {
 
 	public static ClassPool pool = ClassPool.getDefault();
 
+	static final String allatoriCodeWatermarkReplace = 
+			//不加密序列化 serialVersionUID 不知道为啥 allatori 不会自己屏蔽掉这个
+			"if($1.indexOf(\"serialVersionUID\")!=-1){ $_ = \"serialVersionUID\"; } else " +
+			//替换代码中的ALLATORIxDEMO
+			"if($_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\"))" +
+			"{"+
+				//防止复杂方法出现重复名称
+				"if($1.indexOf(\"AllatoriDecryptString\")==-1) { $_ = \"Lqs1848\"; } else { $_ =RandomName.get($1); }" +
+			"}";
+	
+	//这里随便替换 看你心情 爱打印什么打印什么
+	static final String copyrightStatement = 
+			"String s = \"\";"
+			+ "s += \"################################################\\n\"; "
+			+ "s += \"#                                              #\\n\"; "
+			+ "s += \"#                    替换这里                  #\\n\"; "
+			+ "s += \"#                                              #\\n\"; "
+			+ "s += \"#         https://github.com/lqs1848           #\\n\"; "
+			+ "s += \"#                                              #\\n\"; "
+			+ "s += \"################################################\\n\"; " + "$_ = s; ";
+	
+	
 	public static void main(String[] args) throws Throwable {
 		// 先引用 javassist.jar lib目录下就有
 		// 还有 allatori.jar 不引入这个的话 fMethod.getReturnType() 会 ClassNotFind 因为我不是直接用正则去匹配的
@@ -62,32 +84,11 @@ public class Main {
 						if (!fMethod.isEmpty() && fMethod.getName().equals("THIS_IS_DEMO_VERSION_NOT_FOR_COMMERCIAL_USE")) {
 							if (fMethod.getLongName().endsWith("(java.lang.String)")
 									&& "String".equals(fMethod.getReturnType().getSimpleName())) {
-								//随机名称
-								//fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" +"$_ = RandomName.get($1);\n" +"}");
-								//↑↑↑暂不可用↑↑↑
-
-								//替换掉下面 \"Lqs1848\" 这几个字  替换为 \"你想要取的名字\"
-								//注意 不能以 下划线开头 最好类似 ALLATORIxDEMO 这样的结构 大写开头
-								//否则生成出来的 jar 在加密某些类的时候会丢失部分逻辑
-
-								//固定名称
-								fMethod.insertAfter("if($1.indexOf(\"AllatoriDecryptString\")==-1&&$_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\")){\n" + "$_ = \"Lqs1848\";\n" + "}");
+								fMethod.insertAfter(allatoriCodeWatermarkReplace);
 								needRewriteFlag = true;
 							} else if (fMethod.getLongName().endsWith("()")
 									&& "String".equals(fMethod.getReturnType().getSimpleName())) {
-
-								//这里随便替换 看你心情 爱打印什么打印什么
-								String code = "String s = \"\";"
-										+ "s += \"################################################\\n\"; "
-										+ "s += \"#                                              #\\n\"; "
-										+ "s += \"#                    替换这里                  #\\n\"; "
-										+ "s += \"#                                              #\\n\"; "
-										+ "s += \"#           http://blog.lqs1848.top            #\\n\"; "
-										+ "s += \"#                                              #\\n\"; "
-										+ "s += \"################################################\\n\"; " + "$_ = s; ";
-
-								fMethod.insertAfter(
-										"if($_!=null&&!$_.isEmpty()&&$_.indexOf(\"Obfuscation by Allatori\")!=-1){\n" + code + "}");
+								fMethod.insertAfter("if($_!=null&&!$_.isEmpty()&&$_.indexOf(\"Obfuscation by Allatori\")!=-1){\n" + copyrightStatement + "}");
 								needRewriteFlag = true;
 							}
 						}
