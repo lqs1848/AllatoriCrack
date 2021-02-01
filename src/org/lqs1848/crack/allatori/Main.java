@@ -16,15 +16,14 @@ import javassist.CtMethod;
 public class Main {
 
 	public static ClassPool pool = ClassPool.getDefault();
-
+	
 	static final String allatoriCodeWatermarkReplace = 
-			//不加密序列化 serialVersionUID 不知道为啥 allatori 不会自己屏蔽掉这个
+			//不加密序列化 serialVersionUID
 			"if($1.indexOf(\"serialVersionUID\")!=-1){ $_ = \"serialVersionUID\"; } else " +
-			//替换代码中的ALLATORIxDEMO
+			//替换ALLATORIxDEMO
 			"if($_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\"))" +
 			"{"+
-				//防止复杂方法出现重复名称
-				"if($1.indexOf(\"AllatoriDecryptString\")==-1) { $_ = \"Lqs1848\"; } else { $_ =RandomName.get($1); }" +
+				"$_=RandomName.get($1);" +
 			"}";
 	
 	//这里随便替换 看你心情 爱打印什么打印什么
@@ -41,7 +40,7 @@ public class Main {
 	
 	public static void main(String[] args) throws Throwable {
 		// 先引用 javassist.jar lib目录下就有
-		// 还有 allatori.jar 不引入这个的话 fMethod.getReturnType() 会 ClassNotFind 因为我不是直接用正则去匹配的
+		// 还有 allatori.jar 不引入这个的话 fMethod.getReturnType() 会 ClassNotFind
 		
 		
 		//把随机名称的类导入到 javassist
