@@ -26,20 +26,32 @@ public class RandomName {
 	 * @return
 	 */
 	public static String get(String param) {
-		//param.indexOf("AllatoriDecryptString")
-		
 		/*
-		 * 参数大概是:
+		 * param 参数大概是:
 		 * c.m.common.utils.MapCache&put&(Ljava/lang/Object;Ljava/lang/Object;J)Ljava/
 		 * lang/Object; 这样的 字符串 如果版本有变动 要判断 传入的参数和传出的参数是否变动了
 		 */
-		String res = mark.get(param);
+		// param.indexOf("AllatoriDecryptString")
+		
+		boolean isField = false;
+		String fieldParam = "";
+		//判断是加密方法还是在加密变量
+		//继承的方法名称不会被加密 但是继承的变量被加密名称与父类不同会出错
+		//尽量保持变量名称一致
+		String[] params = param.split("&");
+		if(params[2].startsWith("L")) {
+			isField = true;
+			fieldParam = params[1] + params[2];
+		}
+		
+		
+		String res = mark.get(isField ? fieldParam : param);
 		if (res != null)
 			return res;
 
 		String className = getClassName(param);
-		Set<String> methodSet = repMap.getOrDefault(className, new HashSet<>());
-		
+		Set<String> nameSet = repMap.getOrDefault(className, new HashSet<>());
+
 		Random ran = new Random();
 		StringBuffer sb = new StringBuffer();
 		do {
@@ -47,22 +59,13 @@ public class RandomName {
 			for (int i = 0; i < len; i++)
 				sb.append(str.charAt(ran.nextInt(str.length())));
 			res = sb.toString();
-		} while (methodSet.contains(res));
-		
-		methodSet.add(res);
-		repMap.put(className, methodSet);
-		mark.put(param, res);
-		return res;
-	}// method
+		} while (nameSet.contains(res));//防止方法名或变量名称重复
 
-	public static String getClassName(String param) {
-		try {
-			int start = param.lastIndexOf(".") + 1;
-			int end = param.indexOf("&");
-			return param.substring(start, end);
-		} catch (Exception e) {
-			System.out.println("analysis class name error:" + param);
-		}
-		return param;
+		nameSet.add(res);
+		repMap.put(className, nameSet);
+		mark.put(isField ? fieldParam : param, res);
+
+		return res;
+	
 	}// method 
 }// class
