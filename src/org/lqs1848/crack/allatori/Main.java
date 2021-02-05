@@ -20,10 +20,10 @@ public class Main {
 	static final String allatoriCodeWatermarkReplace = 
 			//不加密序列化 serialVersionUID
 			"if($1.indexOf(\"serialVersionUID\")!=-1){ $_ = \"serialVersionUID\"; } else " +
-			//替换ALLATORIxDEMO
-			"if($_!=null&&!$_.isEmpty()&&$_.equals(\"ALLATORIxDEMO\"))" +
+			//修改加密逻辑
+			"if($_!=null&&!$_.isEmpty())" +
 			"{"+
-				"$_=RandomName.get($1);" +
+				"$_=RandomName.get($1,$_);" +
 			"}";
 	
 	//这里随便替换 看你心情 爱打印什么打印什么

@@ -7,7 +7,7 @@
 
 **简介:**
 
-​	破解 Java 混淆工具 Allatori [官网](http://www.allatori.com/)
+​	破解 Java 混淆工具 Allatori [官网](http://www.allatori.com/)	并进行了部分加密功能的小修改
 
 
 
@@ -25,23 +25,35 @@ config.xml 就是本次加密的配置文件
         <jar in="test.jar" out="obf-test.jar"/>   <-- 需要加密的jar包 -- >
         <jar in="test2.jar" out="obf-test2.jar"/>
     </input>
-    <keep-names>
+    <keep-names>					<-- 哪些东西不加密  这个示例是类名和 public 方法还有变量不加密 -- >
         <class access="protected+">
             <field access="protected+"/>
             <method access="protected+"/>
         </class>
     </keep-names>
+    
+        <-- 需要忽略的Class -- >
+    <ignore-classes>
+		<class template="class *springframework*" />
+		<class template="class *shardingjdbc*" />
+		<class template="class *jni*" />
+		<class template="class *alibaba*"/>
+		<class template="class *persistence*"/>
+	</ignore-classes>
+        
     <property name="log-file" value="log.xml"/>	<-- 加密后输出日志文件 -- >
 </config>
 ```
 
 调用即可加密 test.jar 
 
-官方的demo里有更多的更详细的说明 而且是 .bat 的 双击运行就把 jar 加密混淆了 
+官方的DEMO 里有更多的更详细的说明 而且是 .bat 的 双击运行就把 jar 加密混淆了 
 
 并且搭配Maven插件可以完全不影响原有的编译逻辑
 
-[这里](https://www.52pojie.cn/thread-1354106-1-1.html) 有我用的配置 xml 和 maven 插件 搭配 我自己写的 [发布工具](https://github.com/lqs1848/PublishTools) 可以实现 java SpringBoot项目 一键编译后加密混淆并发布到Linux服务器上运行
+官方DEMO **step12-maven** 文件夹中就有搭配Maven的例子 搭配 我写的 [发布工具](https://github.com/lqs1848/PublishTools) 可以实现 java SpringBoot项目 一键编译后加密混淆并发布到Linux服务器上运行
+
+还能自动加水印 官方DEMO里也有栗子
 
 
 
@@ -102,13 +114,31 @@ demo目录下有示例 并附有7.6原版
 **修改内容:**
 
 1. serialVersionUID 原版Allatori 会把 serialVersionUID 给加密掉 现在默认不加密 (原版可以用xml配置标示不加密这个)
+
 2. 修复 Allatori 原版的 BUG 加密某些类 有时会出现多个方法加密成同一个名称的问题 (方法名称不同 但是参数相同 被加密成同一个方法名 ALLATORIxDEMO 导致加密后的jar无法使用)
 
+3. 原版加密class时会把所有的Class名字修改成随机大小写的单个字母 不同包路径下类的名称会重复 在Spring下 这样加密就会出错
+
+   ```xml
+   <keep-names>
+       <class access="protected+">
+           <field access="protected+"/>
+           <method access="protected+"/>
+       </class>
+   </keep-names>
+   ```
+
+   原版需要 忽略类名加密才能兼容 Spring
+
+   修改后 类名会加密成不重复的随机字母 兼容 不允许 Bean 重复的框架
 
 
-**Bug Repair:**
 
-​		2021/02/04 : 修复继承的变量被加密成与父变量名称不相同的问题
+**更新内容:**
+
+​		2021/02/05 :  **添加功能**  修改内容中的第3点
+
+​		2021/02/04 :  **Bug Repair** 修复继承的变量被加密成与父变量名称不相同的问题
 
 
 
