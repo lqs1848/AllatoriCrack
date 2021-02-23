@@ -27,21 +27,20 @@ public class Main {
 			"}";
 	
 	//这里随便替换 看你心情 爱打印什么打印什么
-	static final String copyrightStatement = 
-			"String s = \"\";"
-			+ "s += \"################################################\\n\"; "
-			+ "s += \"#                                              #\\n\"; "
-			+ "s += \"#                    替换这里                  #\\n\"; "
-			+ "s += \"#                                              #\\n\"; "
-			+ "s += \"#         https://github.com/lqs1848           #\\n\"; "
-			+ "s += \"#                                              #\\n\"; "
-			+ "s += \"################################################\\n\"; " + "$_ = s; ";
+		static final String copyrightStatement = 
+				"String s = \"\";"
+				+ "s += \"################################################\\n\"; "
+				+ "s += \"#                                              #\\n\"; "
+				+ "s += \"#                    替换这里                  #\\n\"; "
+				+ "s += \"#                                              #\\n\"; "
+				+ "s += \"#         https://github.com/lqs1848           #\\n\"; "
+				+ "s += \"#                                              #\\n\"; "
+				+ "s += \"################################################\\n\"; " + "$_ = s; ";
 	
 	
 	public static void main(String[] args) throws Throwable {
 		// 先引用 javassist.jar lib目录下就有
 		// 还有 allatori.jar 不引入这个的话 fMethod.getReturnType() 会 ClassNotFind
-		
 		
 		//把随机名称的类导入到 javassist
 		pool.importPackage("org.lqs1848.crack.allatori.RandomName");

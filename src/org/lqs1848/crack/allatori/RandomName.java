@@ -36,7 +36,10 @@ public class RandomName {
 		 * lang/Object; 这样的 字符串 如果版本有变动 要判断 传入的参数和传出的参数是否变动了
 		 */
 		// param.indexOf("AllatoriDecryptString")
-
+		
+		//忽略加密
+		if(pendingStr.equals(originalEncryptStr)) return originalEncryptStr;
+		
 		return "ALLATORIxDEMO".equals(originalEncryptStr) ? ALLATORIxDEMO(pendingStr, originalEncryptStr)
 				: otherAllatori(pendingStr, originalEncryptStr);
 	}// method
@@ -77,21 +80,15 @@ public class RandomName {
 	 * 修改 allatori 中 被加密为 ALLATORIxDEMO 的加密字符串
 	 * 
 	 * 主要修改方法和变量名称
-	 * 
 	 */
 	private static String ALLATORIxDEMO(String pendingStr, String originalEncryptStr) {
-		boolean isField = false;
-		String fieldParam = "";
-		// 判断是加密方法还是在加密变量
-		// 继承的方法名称不会被加密 但是继承的变量被加密名称与父类不同会出错
-		// 尽量保持变量名称一致
+		//将所有 
+		//方法名相同 参数相同的方法 加密为相同的字符串
+		//变量名相同 变量类型相同 也加密为相同的字符串
 		String[] params = pendingStr.split("&");
-		if (params[2].startsWith("L")) {
-			isField = true;
-			fieldParam = params[1] + params[2];
-		}
+		pendingStr = params[1] + params[2];
 
-		String res = mark.get(isField ? fieldParam : pendingStr);
+		String res = mark.get(pendingStr);
 		if (res != null)
 			return res;
 
@@ -104,7 +101,7 @@ public class RandomName {
 
 		nameSet.add(res);
 		repMap.put(className, nameSet);
-		mark.put(isField ? fieldParam : pendingStr, res);
+		mark.put(pendingStr, res);
 
 		return res;
 	}// method
