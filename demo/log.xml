@@ -1,0 +1,2125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   http://lqs1848.gitee.io v7.6 DEMO
+   Web: https://blog.lqs1848.top
+
+   Log created: Thu Jul 15 15:54:28 CST 2021
+-->
+
+<!--
+Class 'cn.hutool.core.getter.OptNullBasicTypeFromObjectGetter' cannot be found.
+Class 'cn.hutool.core.convert.Converter' cannot be found.
+Some classes weren't found. It may result in weaker obfuscation. Add needed jars to the 'classpath' element of the configuration file.
+CLASS NOT FOUND: cn/hutool/core/getter/OptNullBasicTypeFromObjectGetter
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: cn.hutool.core.map.CaseInsensitiveLinkedMap
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: cn.hutool.core.collection.ArrayIter
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+-->
+
+<allatori>
+ <mapping>
+  <class old="cn.hutool.json.JSONException" new="cn.hutool.json.JSONException">
+  </class>
+  <class old="cn.hutool.log.dialect.commons.ApacheCommonsLogFactory" new="cn.hutool.log.dialect.commons.ApacheCommonsLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist" s="38" e="41"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="30" e="32"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="21" e="23"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.level.TraceLog" new="cn.hutool.log.level.TraceLog">
+   <method old="isTraceEnabled()Z" new="isTraceEnabled"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jboss.JbossLog$1" new="cn.hutool.log.dialect.jboss.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.json.serialize.GlobalSerializeMapping" new="cn.hutool.json.serialize.GlobalSerializeMapping">
+   <method old="getDeserializer(Ljava/lang/reflect/Type;)Lcn/hutool/json/serialize/JSONDeserializer;" new="getDeserializer" s="85" e="88"/>
+   <method old="getSerializer(Ljava/lang/reflect/Type;)Lcn/hutool/json/serialize/JSONSerializer;" new="getSerializer" s="73" e="76"/>
+   <method old="put(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONArraySerializer;)V" new="put" s="28" e="29"/>
+   <method old="put(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONDeserializer;)V" new="put" s="61" e="65"/>
+   <method old="put(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONObjectSerializer;)V" new="put" s="38" e="39"/>
+   <method old="putInternal(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONSerializer;)V" new="CdaTdP" s="48" e="52"/>
+   <field old="deserializerMap Ljava/util/Map;" new="k"/>
+   <field old="serializerMap Ljava/util/Map;" new="XMwoCm"/>
+  </class>
+  <class old="cn.hutool.log.dialect.slf4j.Slf4jLogFactory$1" new="cn.hutool.log.dialect.slf4j.D">
+   <method old="write(I)V" new="write" s="46" e="47"/>
+   <field old="this$0 Lcn/hutool/log/dialect/slf4j/Slf4jLogFactory;" new="k"/>
+   <field old="val$buf Ljava/lang/StringBuilder;" new="iiiIIi"/>
+  </class>
+  <class old="cn.hutool.json.JSONString" new="cn.hutool.json.JSONString">
+   <method old="toJSONString()Ljava/lang/String;" new="toJSONString"/>
+  </class>
+  <class old="cn.hutool.json.JSONTokener" new="cn.hutool.json.JSONTokener">
+   <method old="back()V" new="back" s="94" e="101"/>
+   <method old="end()Z" new="end" s="107" e="107"/>
+   <method old="more()Z" new="more" s="116" e="121"/>
+   <method old="next()C" new="next" s="132" e="158"/>
+   <method old="next(C)C" new="next" s="169" e="173"/>
+   <method old="next(I)Ljava/lang/String;" new="next" s="184" e="197"/>
+   <method old="nextClean()C" new="nextClean" s="209" e="211"/>
+   <method old="nextString(C)Ljava/lang/String;" new="nextString" s="226" e="269"/>
+   <method old="nextTo(C)Ljava/lang/String;" new="nextTo" s="282" e="292"/>
+   <method old="nextTo(Ljava/lang/String;)Ljava/lang/String;" new="nextTo" s="303" e="312"/>
+   <method old="nextValue()Ljava/lang/Object;" new="nextValue" s="323" e="355"/>
+   <method old="skipTo(C)C" new="skipTo" s="367" e="385"/>
+   <method old="syntaxError(Ljava/lang/String;)Lcn/hutool/json/JSONException;" new="syntaxError" s="396" e="396"/>
+   <method old="toJSONArray()Lcn/hutool/json/JSONArray;" new="toJSONArray" s="405" e="433"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="443" e="443"/>
+   <field old="character J" new="C"/>
+   <field old="config Lcn/hutool/json/JSONConfig;" new="m"/>
+   <field old="eof Z" new="c"/>
+   <field old="index J" new="k"/>
+   <field old="line J" new="PjrHQs"/>
+   <field old="previous C" new="D"/>
+   <field old="reader Ljava/io/Reader;" new="e"/>
+   <field old="usePrevious Z" new="F"/>
+  </class>
+  <class old="cn.hutool.log.dialect.tinylog.TinyLog$1" new="cn.hutool.log.dialect.tinylog.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.json.JSONObjectIter" new="cn.hutool.json.JSONObjectIter">
+   <method old="iterator()Ljava/util/Iterator;" new="iterator" s="21" e="21"/>
+   <field old="iterator Ljava/util/Iterator;" new="ppPppp"/>
+  </class>
+  <class old="cn.hutool.json.XMLTokener" new="cn.hutool.json.XMLTokener">
+   <method old="back()V" new="back"/>
+   <method old="end()Z" new="end"/>
+   <method old="more()Z" new="more"/>
+   <method old="next()C" new="next"/>
+   <method old="next(C)C" new="next"/>
+   <method old="next(I)Ljava/lang/String;" new="next"/>
+   <method old="nextCDATA()Ljava/lang/String;" new="nextCDATA" s="44" e="54"/>
+   <method old="nextClean()C" new="nextClean"/>
+   <method old="nextContent()Ljava/lang/Object;" new="nextContent" s="70" e="89"/>
+   <method old="nextEntity(C)Ljava/lang/Object;" new="nextEntity" s="101" e="114"/>
+   <method old="nextMeta()Ljava/lang/Object;" new="nextMeta" s="127" e="173"/>
+   <method old="nextString(C)Ljava/lang/String;" new="nextString"/>
+   <method old="nextTo(C)Ljava/lang/String;" new="nextTo"/>
+   <method old="nextTo(Ljava/lang/String;)Ljava/lang/String;" new="nextTo"/>
+   <method old="nextToken()Ljava/lang/Object;" new="nextToken" s="191" e="255"/>
+   <method old="nextValue()Ljava/lang/Object;" new="nextValue"/>
+   <method old="skipPast(Ljava/lang/String;)Z" new="skipPast" s="273" e="326"/>
+   <method old="skipTo(C)C" new="skipTo"/>
+   <method old="syntaxError(Ljava/lang/String;)Lcn/hutool/json/JSONException;" new="syntaxError"/>
+   <method old="toJSONArray()Lcn/hutool/json/JSONArray;" new="toJSONArray"/>
+   <method old="toString()Ljava/lang/String;" new="toString"/>
+   <field old="entity Ljava/util/HashMap;" new="entity"/>
+  </class>
+  <class old="cn.hutool.json.JSON" new="cn.hutool.json.JSON">
+   <method old="getByPath(Ljava/lang/String;)Ljava/lang/Object;" new="getByPath"/>
+   <method old="getByPath(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;" new="getByPath"/>
+   <method old="putByPath(Ljava/lang/String;Ljava/lang/Object;)V" new="putByPath"/>
+   <method old="toBean(Lcn/hutool/core/lang/TypeReference;)Ljava/lang/Object;" new="toBean" s="160" e="160"/>
+   <method old="toBean(Ljava/lang/Class;)Ljava/lang/Object;" new="toBean" s="148" e="148"/>
+   <method old="toBean(Ljava/lang/reflect/Type;)Ljava/lang/Object;" new="toBean" s="172" e="172"/>
+   <method old="toBean(Ljava/lang/reflect/Type;Z)Ljava/lang/Object;" new="toBean" s="185" e="185"/>
+   <method old="toJSONString(I)Ljava/lang/String;" new="toJSONString" s="110" e="113"/>
+   <method old="toStringPretty()Ljava/lang/String;" new="toStringPretty" s="99" e="99"/>
+   <method old="write(Ljava/io/Writer;)Ljava/io/Writer;" new="write" s="125" e="125"/>
+   <method old="write(Ljava/io/Writer;II)Ljava/io/Writer;" new="write"/>
+  </class>
+  <class old="cn.hutool.json.serialize.JSONSerializer" new="cn.hutool.json.serialize.JSONSerializer">
+   <method old="serialize(Lcn/hutool/json/JSON;Ljava/lang/Object;)V" new="serialize"/>
+  </class>
+  <class old="cn.hutool.log.dialect.commons.ApacheCommonsLog$1" new="cn.hutool.log.dialect.commons.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jboss.JbossLog" new="cn.hutool.log.dialect.jboss.JbossLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="74" e="77"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="113" e="116"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="50" e="50"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="87" e="90"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="69" e="69"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="108" e="108"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="82" e="82"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="56" e="56"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="95" e="95"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="121" e="140"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="61" e="64"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="100" e="103"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="logger Lorg/jboss/logging/Logger;" new="pPpPPp"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j2.Log4j2Log" new="cn.hutool.log.dialect.log4j2.Log4j2Log">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="59" e="60"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="92" e="93"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="37" e="37"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="70" e="71"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="54" e="54"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="87" e="87"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="65" e="65"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="43" e="43"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="76" e="76"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="99" e="119"/>
+   <method old="logIfEnabled(Ljava/lang/String;Lorg/apache/logging/log4j/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="ooOooO" s="133" e="141"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="48" e="49"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="81" e="82"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="logger Lorg/apache/logging/log4j/Logger;" new="pPppPP"/>
+  </class>
+  <class old="cn.hutool.json.JSONSupport" new="cn.hutool.json.JSONSupport">
+   <method old="parse(Ljava/lang/String;)V" new="parse" s="17" e="18"/>
+   <method old="toJSON()Lcn/hutool/json/JSONObject;" new="toJSON" s="24" e="24"/>
+   <method old="toJSONString()Ljava/lang/String;" new="toJSONString" s="29" e="29"/>
+   <method old="toPrettyString()Ljava/lang/String;" new="toPrettyString" s="38" e="38"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="43" e="43"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jboss.JbossLogFactory" new="cn.hutool.log.dialect.jboss.JbossLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="29" e="29"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="24" e="24"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.dialect.slf4j.Slf4jLog" new="cn.hutool.log.dialect.slf4j.Slf4jLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="69" e="76"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="120" e="127"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="41" e="41"/>
+   <method old="getSlf4jLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;" new="dyhpKg" s="178" e="178"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="86" e="93"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="64" e="64"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="115" e="115"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="81" e="81"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="47" e="47"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="98" e="98"/>
+   <method old="locationAwareLog(Lorg/slf4j/spi/LocationAwareLogger;Ljava/lang/String;ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="XXXxXx" s="168" e="169"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="132" e="151"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="52" e="59"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="103" e="110"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="isLocationAwareLogger Z" new="OFgcHs"/>
+   <field old="logger Lorg/slf4j/Logger;" new="k"/>
+  </class>
+  <class old="cn.hutool.log.dialect.tinylog.TinyLog" new="cn.hutool.log.dialect.tinylog.TinyLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="60" e="61"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="92" e="93"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getLastArgumentIfThrowable([Ljava/lang/Object;)Ljava/lang/Throwable;" new="XxxxXx" s="164" e="167"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="38" e="38"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="70" e="71"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="55" e="55"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled" s="103" e="103"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="87" e="87"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="65" e="65"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="44" e="44"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="76" e="76"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="98" e="99"/>
+   <method old="logIfEnabled(Ljava/lang/String;Lorg/pmw/tinylog/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="fSYiYG" s="116" e="120"/>
+   <method old="toTinyLevel(Lcn/hutool/log/level/Level;)Lorg/pmw/tinylog/Level;" new="aqbfJV" s="131" e="153"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="49" e="50"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="81" e="82"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="DEPTH I" new="XXxxxX"/>
+   <field old="level I" new="k"/>
+   <field old="name Ljava/lang/String;" new="m"/>
+  </class>
+  <class old="cn.hutool.json.serialize.JSONDeserializer" new="cn.hutool.json.serialize.JSONDeserializer">
+   <method old="deserialize(Lcn/hutool/json/JSON;)Ljava/lang/Object;" new="deserialize"/>
+  </class>
+  <class old="cn.hutool.log.AbstractLog" new="cn.hutool.log.AbstractLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="61" e="67"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug" s="56" e="57"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="71" e="72"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="121" e="127"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error" s="116" e="117"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="131" e="132"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="81" e="87"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info" s="76" e="77"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="91" e="92"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled" s="23" e="35"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="136" e="142"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="146" e="147"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="46" e="47"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace" s="41" e="42"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="51" e="52"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="101" e="107"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn" s="96" e="97"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="111" e="112"/>
+   <field old="FQCN Ljava/lang/String;" new="pPPppp"/>
+  </class>
+  <class old="cn.hutool.log.dialect.slf4j.Slf4jLog$1" new="cn.hutool.log.dialect.slf4j.k">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.log.LogFactory" new="cn.hutool.log.LogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist" s="94" e="94"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create" s="160" e="162"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog"/>
+   <method old="doCreate()Lcn/hutool/log/LogFactory;" new="XxxxxX" s="173" e="180"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get" s="149" e="149"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get" s="142" e="142"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get" s="132" e="132"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory" s="102" e="102"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog" s="66" e="66"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog" s="56" e="56"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="46" e="46"/>
+   <method old="lambda$getLog$0(Ljava/lang/Object;)Lcn/hutool/log/Log;" new="ppppPP" s="56" e="56"/>
+   <method old="lambda$getLog$1(Ljava/lang/Object;)Lcn/hutool/log/Log;" new="B" s="66" e="66"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory" s="122" e="122"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory" s="112" e="112"/>
+   <field old="logCache Ljava/util/Map;" new="pPPPPp"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j2.Log4j2Log$1" new="cn.hutool.log.dialect.log4j2.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jdk.JdkLog$1" new="cn.hutool.log.dialect.jdk.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.log.dialect.commons.ApacheCommonsLog4JLog" new="cn.hutool.log.dialect.commons.ApacheCommonsLog4JLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+  </class>
+  <class old="cn.hutool.log.level.InfoLog" new="cn.hutool.log.level.InfoLog">
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled"/>
+  </class>
+  <class old="cn.hutool.log.level.ErrorLog" new="cn.hutool.log.level.ErrorLog">
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled"/>
+  </class>
+  <class old="cn.hutool.json.JSONArray" new="cn.hutool.json.JSONArray">
+   <method old="add(ILjava/lang/Object;)V" new="add" s="451" e="464"/>
+   <method old="add(Ljava/lang/Object;)Z" new="add" s="382" e="382"/>
+   <method old="addAll(ILjava/util/Collection;)Z" new="addAll" s="416" e="423"/>
+   <method old="addAll(Ljava/util/Collection;)Z" new="addAll" s="404" e="410"/>
+   <method old="clear()V" new="clear" s="440" e="442"/>
+   <method old="contains(Ljava/lang/Object;)Z" new="contains" s="366" e="366"/>
+   <method old="containsAll(Ljava/util/Collection;)Z" new="containsAll" s="398" e="398"/>
+   <method old="doWrite(Ljava/io/Writer;II)Ljava/io/Writer;" new="OoOooo" s="547" e="573"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="321" e="334"/>
+   <method old="get(I)Ljava/lang/Object;" new="get" s="232" e="232"/>
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="get"/>
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;Z)Ljava/lang/Object;" new="get"/>
+   <method old="getBean(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="getBean"/>
+   <method old="getByPath(Ljava/lang/String;)Ljava/lang/Object;" new="getByPath" s="242" e="242"/>
+   <method old="getByPath(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;" new="getByPath" s="247" e="247"/>
+   <method old="getConfig()Lcn/hutool/json/JSONConfig;" new="getConfig" s="195" e="195"/>
+   <method old="getJSONArray(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="getJSONArray"/>
+   <method old="getJSONObject(Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="getJSONObject"/>
+   <method old="getObj(Ljava/lang/Integer;Ljava/lang/Object;)Ljava/lang/Object;" new="getObj" s="237" e="237"/>
+   <method old="getObj(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" new="getObj" s="36" e="36"/>
+   <method old="getStrEscaped(Ljava/lang/Object;)Ljava/lang/String;" new="getStrEscaped"/>
+   <method old="getStrEscaped(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" new="getStrEscaped"/>
+   <method old="hashCode()I" new="hashCode" s="313" e="316"/>
+   <method old="indexOf(Ljava/lang/Object;)I" new="indexOf" s="468" e="468"/>
+   <method old="init(Lcn/hutool/json/JSONTokener;)V" new="hDJQOk" s="631" e="658"/>
+   <method old="init(Ljava/lang/CharSequence;)V" new="FKPmmL" s="620" e="623"/>
+   <method old="init(Ljava/lang/Object;)V" new="pPpPpP" s="584" e="612"/>
+   <method old="isEmpty()Z" new="isEmpty" s="361" e="361"/>
+   <method old="isNull(Ljava/lang/Object;)Z" new="isNull"/>
+   <method old="iterator()Ljava/util/Iterator;" new="iterator" s="341" e="341"/>
+   <method old="join(Ljava/lang/String;)Ljava/lang/String;" new="join" s="218" e="227"/>
+   <method old="jsonIter()Ljava/lang/Iterable;" new="jsonIter" s="351" e="351"/>
+   <method old="lastIndexOf(Ljava/lang/Object;)I" new="lastIndexOf" s="473" e="473"/>
+   <method old="listIterator()Ljava/util/ListIterator;" new="listIterator" s="479" e="479"/>
+   <method old="listIterator(I)Ljava/util/ListIterator;" new="listIterator" s="485" e="485"/>
+   <method old="put(ILjava/lang/Object;)Lcn/hutool/json/JSONArray;" new="put" s="289" e="290"/>
+   <method old="put(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="put" s="264" e="264"/>
+   <method old="putByPath(Ljava/lang/String;Ljava/lang/Object;)V" new="putByPath" s="252" e="253"/>
+   <method old="remove(I)Ljava/lang/Object;" new="remove" s="387" e="387"/>
+   <method old="remove(Ljava/lang/Object;)Z" new="remove" s="392" e="392"/>
+   <method old="removeAll(Ljava/util/Collection;)Z" new="removeAll" s="429" e="429"/>
+   <method old="retainAll(Ljava/util/Collection;)Z" new="retainAll" s="435" e="435"/>
+   <method old="set(ILjava/lang/Object;)Ljava/lang/Object;" new="set" s="446" e="446"/>
+   <method old="set(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="set" s="276" e="277"/>
+   <method old="setDateFormat(Ljava/lang/String;)Lcn/hutool/json/JSONArray;" new="setDateFormat" s="206" e="207"/>
+   <method old="size()I" new="size" s="356" e="356"/>
+   <method old="subList(II)Ljava/util/List;" new="subList" s="491" e="491"/>
+   <method old="toArray()[Ljava/lang/Object;" new="toArray" s="371" e="371"/>
+   <method old="toArray(Ljava/lang/Class;)Ljava/lang/Object;" new="toArray" s="501" e="501"/>
+   <method old="toArray([Ljava/lang/Object;)[Ljava/lang/Object;" new="toArray" s="377" e="377"/>
+   <method old="toBean(Lcn/hutool/core/lang/TypeReference;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/Class;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/reflect/Type;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/reflect/Type;Z)Ljava/lang/Object;" new="toBean"/>
+   <method old="toJSONObject(Lcn/hutool/json/JSONArray;)Lcn/hutool/json/JSONObject;" new="toJSONObject" s="301" e="308"/>
+   <method old="toJSONString(I)Ljava/lang/String;" new="toJSONString"/>
+   <method old="toList(Ljava/lang/Class;)Ljava/util/List;" new="toList" s="513" e="513"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="523" e="523"/>
+   <method old="toStringPretty()Ljava/lang/String;" new="toStringPretty"/>
+   <method old="write(Ljava/io/Writer;)Ljava/io/Writer;" new="write"/>
+   <method old="write(Ljava/io/Writer;II)Ljava/io/Writer;" new="write" s="529" e="531"/>
+   <field old="DEFAULT_CAPACITY I" new="DEFAULT_CAPACITY"/>
+   <field old="config Lcn/hutool/json/JSONConfig;" new="xxXxxx"/>
+   <field old="rawList Ljava/util/List;" new="k"/>
+  </class>
+  <class old="cn.hutool.json.InternalJSONUtil" new="cn.hutool.json.OOoooO">
+   <method old="defaultIgnoreNullValue(Ljava/lang/Object;)Z" new="PPjvFr" s="221" e="221"/>
+   <method old="formatDate(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" new="tsleWl" s="234" e="250"/>
+   <method old="indent(Ljava/io/Writer;I)V" new="xXxXxx" s="79" e="82"/>
+   <method old="propertyPut(Lcn/hutool/json/JSONObject;Ljava/lang/Object;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="oOooOO" s="191" e="204"/>
+   <method old="stringToValue(Ljava/lang/String;)Ljava/lang/Object;" new="XXxxXx" s="142" e="178"/>
+   <method old="testValidity(Ljava/lang/Object;)V" new="PPppPp" s="91" e="94"/>
+   <method old="valueToString(Ljava/lang/Object;)Ljava/lang/String;" new="OooOOO" s="109" e="131"/>
+   <method old="writeValue(Ljava/io/Writer;Ljava/lang/Object;IILcn/hutool/json/JSONConfig;)Ljava/io/Writer;" new="XXxXXx" s="42" e="68"/>
+  </class>
+  <class old="cn.hutool.log.Log" new="cn.hutool.log.Log">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get" s="46" e="46"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get" s="27" e="27"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get" s="38" e="38"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+  </class>
+  <class old="cn.hutool.log.dialect.console.ConsoleLogFactory" new="cn.hutool.log.dialect.console.ConsoleLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="24" e="24"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="19" e="19"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jdk.JdkLog" new="cn.hutool.log.dialect.jdk.JdkLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="58" e="59"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="91" e="92"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="fillCallerData(Ljava/lang/String;Ljava/util/logging/LogRecord;)V" new="oooooO" s="146" e="164"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="36" e="36"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="69" e="70"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="53" e="53"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="86" e="86"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="64" e="64"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="42" e="42"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="75" e="75"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="98" e="118"/>
+   <method old="logIfEnabled(Ljava/lang/String;Ljava/util/logging/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="xxXXXX" s="131" e="138"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="47" e="48"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="80" e="81"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="logger Ljava/util/logging/Logger;" new="OOoOOO"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j.Log4jLog$1" new="cn.hutool.log.dialect.log4j.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.json.JSONNull" new="cn.hutool.json.JSONNull">
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="31" e="31"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="42" e="42"/>
+   <field old="NULL Lcn/hutool/json/JSONNull;" new="NULL"/>
+  </class>
+  <class old="cn.hutool.json.JSONUtil" new="cn.hutool.json.JSONUtil">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="createArray()Lcn/hutool/json/JSONArray;" new="createArray" s="67" e="67"/>
+   <method old="createArray(Lcn/hutool/json/JSONConfig;)Lcn/hutool/json/JSONArray;" new="createArray" s="78" e="78"/>
+   <method old="createObj()Lcn/hutool/json/JSONObject;" new="createObj" s="47" e="47"/>
+   <method old="createObj(Lcn/hutool/json/JSONConfig;)Lcn/hutool/json/JSONObject;" new="createObj" s="58" e="58"/>
+   <method old="escape(C)Ljava/lang/String;" new="eVHJvv" s="882" e="902"/>
+   <method old="escape(Ljava/lang/String;)Ljava/lang/String;" new="escape" s="666" e="677"/>
+   <method old="formatJsonStr(Ljava/lang/String;)Ljava/lang/String;" new="formatJsonStr" s="766" e="766"/>
+   <method old="getByPath(Lcn/hutool/json/JSON;Ljava/lang/String;)Ljava/lang/Object;" new="getByPath" s="532" e="532"/>
+   <method old="isJson(Ljava/lang/String;)Z" new="isJson" s="777" e="777"/>
+   <method old="isJsonArray(Ljava/lang/String;)Z" new="isJsonArray" s="802" e="805"/>
+   <method old="isJsonObj(Ljava/lang/String;)Z" new="isJsonObj" s="788" e="791"/>
+   <method old="isNull(Ljava/lang/Object;)Z" new="isNull" s="821" e="821"/>
+   <method old="parse(Ljava/lang/Object;)Lcn/hutool/json/JSON;" new="parse" s="196" e="196"/>
+   <method old="parse(Ljava/lang/Object;Lcn/hutool/json/JSONConfig;)Lcn/hutool/json/JSON;" new="parse" s="212" e="228"/>
+   <method old="parseArray(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="parseArray" s="158" e="158"/>
+   <method old="parseArray(Ljava/lang/Object;Lcn/hutool/json/JSONConfig;)Lcn/hutool/json/JSONArray;" new="parseArray" s="170" e="170"/>
+   <method old="parseArray(Ljava/lang/Object;Z)Lcn/hutool/json/JSONArray;" new="parseArray" s="182" e="182"/>
+   <method old="parseArray(Ljava/lang/String;)Lcn/hutool/json/JSONArray;" new="parseArray" s="147" e="147"/>
+   <method old="parseFromMap(Ljava/util/Map;)Lcn/hutool/json/JSONObject;" new="parseFromMap" s="250" e="250"/>
+   <method old="parseFromResourceBundle(Ljava/util/ResourceBundle;)Lcn/hutool/json/JSONObject;" new="parseFromResourceBundle" s="262" e="262"/>
+   <method old="parseFromXml(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="parseFromXml" s="238" e="238"/>
+   <method old="parseObj(Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="parseObj" s="99" e="99"/>
+   <method old="parseObj(Ljava/lang/Object;Lcn/hutool/json/JSONConfig;)Lcn/hutool/json/JSONObject;" new="parseObj" s="112" e="112"/>
+   <method old="parseObj(Ljava/lang/Object;Z)Lcn/hutool/json/JSONObject;" new="parseObj" s="124" e="124"/>
+   <method old="parseObj(Ljava/lang/Object;ZZ)Lcn/hutool/json/JSONObject;" new="parseObj" s="137" e="137"/>
+   <method old="parseObj(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="parseObj" s="88" e="88"/>
+   <method old="putByPath(Lcn/hutool/json/JSON;Ljava/lang/String;Ljava/lang/Object;)V" new="putByPath" s="558" e="559"/>
+   <method old="putDeserializer(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONDeserializer;)V" new="putDeserializer" s="869" e="870"/>
+   <method old="putSerializer(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONArraySerializer;)V" new="putSerializer" s="845" e="846"/>
+   <method old="putSerializer(Ljava/lang/reflect/Type;Lcn/hutool/json/serialize/JSONObjectSerializer;)V" new="putSerializer" s="857" e="858"/>
+   <method old="quote(Ljava/lang/String;)Ljava/lang/String;" new="quote" s="570" e="570"/>
+   <method old="quote(Ljava/lang/String;Ljava/io/Writer;)Ljava/io/Writer;" new="quote" s="604" e="604"/>
+   <method old="quote(Ljava/lang/String;Ljava/io/Writer;Z)Ljava/io/Writer;" new="quote" s="620" e="656"/>
+   <method old="quote(Ljava/lang/String;Z)Ljava/lang/String;" new="quote" s="584" e="589"/>
+   <method old="readJSON(Ljava/io/File;Ljava/nio/charset/Charset;)Lcn/hutool/json/JSON;" new="readJSON" s="277" e="277"/>
+   <method old="readJSONArray(Ljava/io/File;Ljava/nio/charset/Charset;)Lcn/hutool/json/JSONArray;" new="readJSONArray" s="301" e="301"/>
+   <method old="readJSONObject(Ljava/io/File;Ljava/nio/charset/Charset;)Lcn/hutool/json/JSONObject;" new="readJSONObject" s="289" e="289"/>
+   <method old="toBean(Lcn/hutool/json/JSON;Lcn/hutool/core/lang/TypeReference;Z)Ljava/lang/Object;" new="toBean" s="476" e="476"/>
+   <method old="toBean(Lcn/hutool/json/JSON;Ljava/lang/reflect/Type;Z)Ljava/lang/Object;" new="toBean" s="490" e="493"/>
+   <method old="toBean(Lcn/hutool/json/JSONObject;Ljava/lang/Class;)Ljava/lang/Object;" new="toBean" s="434" e="434"/>
+   <method old="toBean(Ljava/lang/String;Lcn/hutool/core/lang/TypeReference;Z)Ljava/lang/Object;" new="toBean" s="448" e="448"/>
+   <method old="toBean(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;" new="toBean" s="422" e="422"/>
+   <method old="toBean(Ljava/lang/String;Ljava/lang/reflect/Type;Z)Ljava/lang/Object;" new="toBean" s="462" e="462"/>
+   <method old="toJsonPrettyStr(Lcn/hutool/json/JSON;)Ljava/lang/String;" new="toJsonPrettyStr" s="354" e="357"/>
+   <method old="toJsonPrettyStr(Ljava/lang/Object;)Ljava/lang/String;" new="toJsonPrettyStr" s="396" e="396"/>
+   <method old="toJsonStr(Lcn/hutool/json/JSON;)Ljava/lang/String;" new="toJsonStr" s="328" e="331"/>
+   <method old="toJsonStr(Lcn/hutool/json/JSON;I)Ljava/lang/String;" new="toJsonStr" s="315" e="318"/>
+   <method old="toJsonStr(Lcn/hutool/json/JSON;Ljava/io/Writer;)V" new="toJsonStr" s="342" e="345"/>
+   <method old="toJsonStr(Ljava/lang/Object;)Ljava/lang/String;" new="toJsonStr" s="367" e="373"/>
+   <method old="toJsonStr(Ljava/lang/Object;Ljava/io/Writer;)V" new="toJsonStr" s="384" e="387"/>
+   <method old="toList(Lcn/hutool/json/JSONArray;Ljava/lang/Class;)Ljava/util/List;" new="toList" s="507" e="507"/>
+   <method old="toXmlStr(Lcn/hutool/json/JSON;)Ljava/lang/String;" new="toXmlStr" s="406" e="406"/>
+   <method old="wrap(Ljava/lang/Object;Lcn/hutool/json/JSONConfig;)Ljava/lang/Object;" new="wrap" s="698" e="754"/>
+   <method old="xmlToJson(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="xmlToJson" s="833" e="833"/>
+  </class>
+  <class old="cn.hutool.json.XML" new="cn.hutool.json.XML">
+   <method old="parse(Lcn/hutool/json/XMLTokener;Lcn/hutool/json/JSONObject;Ljava/lang/String;Z)Z" new="pPpPPp" s="136" e="265"/>
+   <method old="toJSONObject(Lcn/hutool/json/JSONObject;Ljava/lang/String;Z)Lcn/hutool/json/JSONObject;" new="toJSONObject" s="102" e="106"/>
+   <method old="toJSONObject(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="toJSONObject" s="72" e="72"/>
+   <method old="toJSONObject(Ljava/lang/String;Z)Lcn/hutool/json/JSONObject;" new="toJSONObject" s="87" e="87"/>
+   <method old="toXml(Ljava/lang/Object;)Ljava/lang/String;" new="toXml" s="280" e="280"/>
+   <method old="toXml(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" new="toXml" s="293" e="397"/>
+   <field old="AMP Ljava/lang/Character;" new="AMP"/>
+   <field old="APOS Ljava/lang/Character;" new="APOS"/>
+   <field old="BANG Ljava/lang/Character;" new="BANG"/>
+   <field old="EQ Ljava/lang/Character;" new="EQ"/>
+   <field old="GT Ljava/lang/Character;" new="GT"/>
+   <field old="LT Ljava/lang/Character;" new="LT"/>
+   <field old="QUEST Ljava/lang/Character;" new="QUEST"/>
+   <field old="QUOT Ljava/lang/Character;" new="QUOT"/>
+   <field old="SLASH Ljava/lang/Character;" new="SLASH"/>
+  </class>
+  <class old="cn.hutool.log.AbstractLog$1" new="cn.hutool.log.D">
+   <field old="$SwitchMap$cn$hutool$log$level$Level [I" new="IIiiII"/>
+  </class>
+  <class old="cn.hutool.json.JSONConverter" new="cn.hutool.json.JSONConverter">
+   <method old="convert(Ljava/lang/Object;Lcn/hutool/json/JSON;)Lcn/hutool/json/JSON;" new="convert" s="99" e="99"/>
+   <method old="convert(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" new="convert" s="23" e="23"/>
+   <method old="jsonConvert(Ljava/lang/reflect/Type;Ljava/lang/Object;Z)Ljava/lang/Object;" new="jsonConvert" s="69" e="94"/>
+   <method old="toArray(Lcn/hutool/json/JSONArray;Ljava/lang/Class;)Ljava/lang/Object;" new="toArray" s="41" e="41"/>
+   <method old="toList(Lcn/hutool/json/JSONArray;Ljava/lang/Class;)Ljava/util/List;" new="toList" s="53" e="53"/>
+  </class>
+  <class old="cn.hutool.json.JSONObject" new="cn.hutool.json.JSONObject">
+   <method old="accumulate(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="accumulate" s="432" e="441"/>
+   <method old="append(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="append" s="453" e="462"/>
+   <method old="clear()V" new="clear" s="501" e="502"/>
+   <method old="containsKey(Ljava/lang/Object;)Z" new="containsKey" s="308" e="308"/>
+   <method old="containsValue(Ljava/lang/Object;)Z" new="containsValue" s="313" e="313"/>
+   <method old="doWrite(Ljava/io/Writer;II)Ljava/io/Writer;" new="OoOooo" s="578" e="614"/>
+   <method old="entrySet()Ljava/util/Set;" new="entrySet" s="516" e="516"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="529" e="542"/>
+   <method old="get(Ljava/lang/Object;)Ljava/lang/Object;" new="get" s="318" e="318"/>
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="get"/>
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;Z)Ljava/lang/Object;" new="get"/>
+   <method old="getBean(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="getBean"/>
+   <method old="getByPath(Ljava/lang/String;)Ljava/lang/Object;" new="getByPath" s="329" e="329"/>
+   <method old="getByPath(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;" new="getByPath" s="334" e="334"/>
+   <method old="getConfig()Lcn/hutool/json/JSONConfig;" new="getConfig" s="259" e="259"/>
+   <method old="getJSONArray(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="getJSONArray"/>
+   <method old="getJSONObject(Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="getJSONObject"/>
+   <method old="getObj(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" new="getObj" s="42" e="42"/>
+   <method old="getObj(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" new="getObj" s="323" e="324"/>
+   <method old="getStrEscaped(Ljava/lang/Object;)Ljava/lang/String;" new="getStrEscaped"/>
+   <method old="getStrEscaped(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" new="getStrEscaped"/>
+   <method old="hashCode()I" new="hashCode" s="521" e="524"/>
+   <method old="increment(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="increment" s="473" e="491"/>
+   <method old="init(Lcn/hutool/json/JSONTokener;)V" new="hDJQOk" s="711" e="747"/>
+   <method old="init(Ljava/lang/CharSequence;)V" new="FKPmmL" s="694" e="700"/>
+   <method old="init(Ljava/lang/Object;)V" new="B" s="644" e="670"/>
+   <method old="init(Ljava/util/ResourceBundle;)V" new="ppPppp" s="679" e="686"/>
+   <method old="isEmpty()Z" new="isEmpty" s="303" e="303"/>
+   <method old="isNull(Ljava/lang/Object;)Z" new="isNull"/>
+   <method old="keySet()Ljava/util/Set;" new="keySet" s="506" e="506"/>
+   <method old="populateMap(Ljava/lang/Object;)V" new="xjcZOE" s="623" e="629"/>
+   <method old="put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" new="put" s="42" e="42"/>
+   <method old="put(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="put" s="354" e="366"/>
+   <method old="putAll(Ljava/util/Map;)V" new="putAll" s="417" e="420"/>
+   <method old="putByPath(Ljava/lang/String;Ljava/lang/Object;)V" new="putByPath" s="339" e="340"/>
+   <method old="putOnce(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="putOnce" s="391" e="397"/>
+   <method old="putOpt(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="putOpt" s="409" e="412"/>
+   <method old="remove(Ljava/lang/Object;)Ljava/lang/Object;" new="remove" s="496" e="496"/>
+   <method old="set(Ljava/lang/String;Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="set" s="378" e="379"/>
+   <method old="setDateFormat(Ljava/lang/String;)Lcn/hutool/json/JSONObject;" new="setDateFormat" s="270" e="271"/>
+   <method old="size()I" new="size" s="298" e="298"/>
+   <method old="toBean(Lcn/hutool/core/lang/TypeReference;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/Class;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/reflect/Type;)Ljava/lang/Object;" new="toBean"/>
+   <method old="toBean(Ljava/lang/reflect/Type;Z)Ljava/lang/Object;" new="toBean"/>
+   <method old="toJSONArray(Ljava/util/Collection;)Lcn/hutool/json/JSONArray;" new="toJSONArray" s="282" e="293"/>
+   <method old="toJSONString(I)Ljava/lang/String;" new="toJSONString"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="554" e="554"/>
+   <method old="toStringPretty()Ljava/lang/String;" new="toStringPretty"/>
+   <method old="values()Ljava/util/Collection;" new="values" s="511" e="511"/>
+   <method old="write(Ljava/io/Writer;)Ljava/io/Writer;" new="write"/>
+   <method old="write(Ljava/io/Writer;II)Ljava/io/Writer;" new="write" s="560" e="562"/>
+   <field old="DEFAULT_CAPACITY I" new="DEFAULT_CAPACITY"/>
+   <field old="config Lcn/hutool/json/JSONConfig;" new="xxXxxx"/>
+   <field old="rawHashMap Ljava/util/Map;" new="k"/>
+  </class>
+  <class old="cn.hutool.log.level.Level" new="cn.hutool.log.level.Level">
+   <method old="valueOf(Ljava/lang/String;)Lcn/hutool/log/level/Level;" new="valueOf" s="8" e="8"/>
+   <method old="values()[Lcn/hutool/log/level/Level;" new="values" s="8" e="8"/>
+   <field old="$VALUES [Lcn/hutool/log/level/Level;" new="OoOOOo"/>
+   <field old="ALL Lcn/hutool/log/level/Level;" new="ALL"/>
+   <field old="DEBUG Lcn/hutool/log/level/Level;" new="DEBUG"/>
+   <field old="ERROR Lcn/hutool/log/level/Level;" new="ERROR"/>
+   <field old="FATAL Lcn/hutool/log/level/Level;" new="FATAL"/>
+   <field old="INFO Lcn/hutool/log/level/Level;" new="INFO"/>
+   <field old="OFF Lcn/hutool/log/level/Level;" new="OFF"/>
+   <field old="TRACE Lcn/hutool/log/level/Level;" new="TRACE"/>
+   <field old="WARN Lcn/hutool/log/level/Level;" new="WARN"/>
+  </class>
+  <class old="cn.hutool.log.dialect.console.ConsoleLog" new="cn.hutool.log.dialect.console.ConsoleLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="79" e="80"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="112" e="113"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="46" e="46"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="90" e="91"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="74" e="74"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled" s="141" e="141"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="107" e="107"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="85" e="85"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="63" e="63"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="96" e="96"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="119" e="137"/>
+   <method old="setLevel(Lcn/hutool/log/level/Level;)V" new="setLevel" s="56" e="58"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="68" e="69"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="101" e="102"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="currentLevel Lcn/hutool/log/level/Level;" new="m"/>
+   <field old="logFormat Ljava/lang/String;" new="xXXxXx"/>
+   <field old="name Ljava/lang/String;" new="k"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j.Log4jLogFactory" new="cn.hutool.log.dialect.log4j.Log4jLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="25" e="25"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="20" e="20"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.dialect.jdk.JdkLogFactory" new="cn.hutool.log.dialect.jdk.JdkLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="32" e="32"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="27" e="27"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="readConfig()V" new="pPPppp" s="40" e="58"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.json.JSONConfig" new="cn.hutool.json.JSONConfig">
+   <method old="create()Lcn/hutool/json/JSONConfig;" new="create" s="45" e="45"/>
+   <method old="getDateFormat()Ljava/lang/String;" new="getDateFormat" s="114" e="114"/>
+   <method old="isIgnoreCase()Z" new="isIgnoreCase" s="94" e="94"/>
+   <method old="isIgnoreError()Z" new="isIgnoreError" s="74" e="74"/>
+   <method old="isIgnoreNullValue()Z" new="isIgnoreNullValue" s="134" e="134"/>
+   <method old="isIgnoreTransient()Z" new="isIgnoreTransient" s="157" e="157"/>
+   <method old="isOrder()Z" new="isOrder" s="54" e="54"/>
+   <method old="isTransientSupport()Z" new="isTransientSupport" s="180" e="180"/>
+   <method old="setDateFormat(Ljava/lang/String;)Lcn/hutool/json/JSONConfig;" new="setDateFormat" s="124" e="125"/>
+   <method old="setIgnoreCase(Z)Lcn/hutool/json/JSONConfig;" new="setIgnoreCase" s="104" e="105"/>
+   <method old="setIgnoreError(Z)Lcn/hutool/json/JSONConfig;" new="setIgnoreError" s="84" e="85"/>
+   <method old="setIgnoreNullValue(Z)Lcn/hutool/json/JSONConfig;" new="setIgnoreNullValue" s="144" e="145"/>
+   <method old="setIgnoreTransient(Z)Lcn/hutool/json/JSONConfig;" new="setIgnoreTransient" s="170" e="170"/>
+   <method old="setOrder(Z)Lcn/hutool/json/JSONConfig;" new="setOrder" s="64" e="65"/>
+   <method old="setTransientSupport(Z)Lcn/hutool/json/JSONConfig;" new="setTransientSupport" s="191" e="192"/>
+   <field old="dateFormat Ljava/lang/String;" new="m"/>
+   <field old="ignoreCase Z" new="k"/>
+   <field old="ignoreError Z" new="c"/>
+   <field old="ignoreNullValue Z" new="zIxYGv"/>
+   <field old="order Z" new="C"/>
+   <field old="transientSupport Z" new="e"/>
+  </class>
+  <class old="cn.hutool.log.dialect.slf4j.Slf4jLogFactory" new="cn.hutool.log.dialect.slf4j.Slf4jLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="72" e="72"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="67" e="67"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j2.Log4j2LogFactory" new="cn.hutool.log.dialect.log4j2.Log4j2LogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="25" e="25"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="20" e="20"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <class old="cn.hutool.log.GlobalLogFactory" new="cn.hutool.log.GlobalLogFactory">
+   <method old="get()Lcn/hutool/log/LogFactory;" new="get" s="20" e="27"/>
+   <method old="set(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="set" s="65" e="67"/>
+   <method old="set(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="set" s="45" e="47"/>
+   <field old="currentLogFactory Lcn/hutool/log/LogFactory;" new="k"/>
+   <field old="lock Ljava/lang/Object;" new="ooOOoo"/>
+  </class>
+  <class old="cn.hutool.log.dialect.log4j.Log4jLog" new="cn.hutool.log.dialect.log4j.Log4jLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="57" e="58"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="89" e="90"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="35" e="35"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="67" e="68"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="52" e="52"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="84" e="84"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="62" e="62"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="41" e="41"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="73" e="73"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="96" e="119"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="46" e="47"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="78" e="79"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <field old="logger Lorg/apache/log4j/Logger;" new="PppPPp"/>
+  </class>
+  <class old="cn.hutool.log.level.WarnLog" new="cn.hutool.log.level.WarnLog">
+   <method old="isWarnEnabled()Z" new="isWarnEnabled"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn"/>
+  </class>
+  <class old="cn.hutool.log.dialect.commons.ApacheCommonsLog" new="cn.hutool.log.dialect.commons.ApacheCommonsLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="63" e="66"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="error(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="116" e="120"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="37" e="37"/>
+   <method old="info(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="77" e="80"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;)V" new="info"/>
+   <method old="info(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="info"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled" s="57" e="57"/>
+   <method old="isEnabled(Lcn/hutool/log/level/Level;)Z" new="isEnabled"/>
+   <method old="isErrorEnabled()Z" new="isErrorEnabled" s="110" e="110"/>
+   <method old="isInfoEnabled()Z" new="isInfoEnabled" s="71" e="71"/>
+   <method old="isTraceEnabled()Z" new="isTraceEnabled" s="43" e="43"/>
+   <method old="isWarnEnabled()Z" new="isWarnEnabled" s="85" e="85"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log"/>
+   <method old="log(Ljava/lang/String;Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="125" e="144"/>
+   <method old="trace(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="49" e="52"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;)V" new="trace"/>
+   <method old="trace(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace"/>
+   <method old="warn(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="102" e="105"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="90" e="93"/>
+   <method old="warn(Ljava/lang/Throwable;)V" new="warn"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="97" e="97"/>
+   <field old="logger Lorg/apache/commons/logging/Log;" new="iiIIII"/>
+   <field old="name Ljava/lang/String;" new="k"/>
+  </class>
+  <class old="cn.hutool.json.JSONObjectIter$1" new="cn.hutool.json.D">
+   <method old="hasNext()Z" new="hasNext" s="25" e="25"/>
+   <method old="next()Lcn/hutool/json/JSONObject;" new="xXXxxX" s="30" e="30"/>
+   <method old="next()Ljava/lang/Object;" new="next" s="21" e="21"/>
+   <method old="remove()V" new="remove" s="35" e="36"/>
+   <field old="this$0 Lcn/hutool/json/JSONObjectIter;" new="IIIiIi"/>
+  </class>
+  <class old="cn.hutool.json.JSONGetter" new="cn.hutool.json.JSONGetter">
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="get" s="120" e="120"/>
+   <method old="get(Ljava/lang/Object;Ljava/lang/Class;Z)Ljava/lang/Object;" new="get" s="135" e="139"/>
+   <method old="getBean(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;" new="getBean" s="104" e="105"/>
+   <method old="getConfig()Lcn/hutool/json/JSONConfig;" new="getConfig"/>
+   <method old="getJSONArray(Ljava/lang/Object;)Lcn/hutool/json/JSONArray;" new="getJSONArray" s="63" e="71"/>
+   <method old="getJSONObject(Ljava/lang/Object;)Lcn/hutool/json/JSONObject;" new="getJSONObject" s="82" e="90"/>
+   <method old="getStrEscaped(Ljava/lang/Object;)Ljava/lang/String;" new="getStrEscaped" s="40" e="40"/>
+   <method old="getStrEscaped(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" new="getStrEscaped" s="52" e="52"/>
+   <method old="isNull(Ljava/lang/Object;)Z" new="isNull" s="29" e="29"/>
+  </class>
+  <class old="cn.hutool.json.serialize.JSONObjectSerializer" new="cn.hutool.json.serialize.JSONObjectSerializer">
+   <method old="serialize(Lcn/hutool/json/JSON;Ljava/lang/Object;)V" new="serialize"/>
+  </class>
+  <class old="cn.hutool.log.StaticLog" new="cn.hutool.log.StaticLog">
+   <method old="debug(Lcn/hutool/log/Log;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="63" e="64"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug" s="52" e="53"/>
+   <method old="error(Lcn/hutool/log/Log;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="188" e="189"/>
+   <method old="error(Lcn/hutool/log/Log;Ljava/lang/Throwable;)V" new="error" s="177" e="178"/>
+   <method old="error(Lcn/hutool/log/Log;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="200" e="201"/>
+   <method old="error(Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="155" e="156"/>
+   <method old="error(Ljava/lang/Throwable;)V" new="error" s="144" e="145"/>
+   <method old="error(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="error" s="167" e="168"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get" s="248" e="248"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get" s="227" e="227"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get" s="239" e="239"/>
+   <method old="info(Lcn/hutool/log/Log;Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="86" e="87"/>
+   <method old="info(Ljava/lang/String;[Ljava/lang/Object;)V" new="info" s="75" e="76"/>
+   <method old="log(Lcn/hutool/log/level/Level;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="log" s="213" e="214"/>
+   <method old="trace(Lcn/hutool/log/Log;Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="40" e="41"/>
+   <method old="trace(Ljava/lang/String;[Ljava/lang/Object;)V" new="trace" s="29" e="30"/>
+   <method old="warn(Lcn/hutool/log/Log;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="121" e="122"/>
+   <method old="warn(Lcn/hutool/log/Log;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="133" e="134"/>
+   <method old="warn(Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="98" e="99"/>
+   <method old="warn(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="warn" s="110" e="111"/>
+   <field old="FQCN Ljava/lang/String;" new="pPPppp"/>
+  </class>
+  <class old="cn.hutool.json.serialize.JSONArraySerializer" new="cn.hutool.json.serialize.JSONArraySerializer">
+   <method old="serialize(Lcn/hutool/json/JSON;Ljava/lang/Object;)V" new="serialize"/>
+  </class>
+  <class old="cn.hutool.json.JSONStrFormater" new="cn.hutool.json.JSONStrFormater">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="format(Ljava/lang/String;)Ljava/lang/String;" new="format" s="26" e="111"/>
+   <method old="indent(I)Ljava/lang/String;" new="OOOOOo" s="121" e="121"/>
+   <field old="NEW_LINE C" new="oOOOOO"/>
+   <field old="SPACE Ljava/lang/String;" new="k"/>
+  </class>
+  <class old="cn.hutool.log.level.DebugLog" new="cn.hutool.log.level.DebugLog">
+   <method old="debug(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;)V" new="debug"/>
+   <method old="debug(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V" new="debug"/>
+   <method old="isDebugEnabled()Z" new="isDebugEnabled"/>
+  </class>
+  <class old="cn.hutool.log.dialect.tinylog.TinyLogFactory" new="cn.hutool.log.dialect.tinylog.TinyLogFactory">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="OOOOOO"/>
+   <method old="checkLogExist(Ljava/lang/Class;)V" new="checkLogExist"/>
+   <method old="create()Lcn/hutool/log/LogFactory;" new="create"/>
+   <method old="createLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="createLog" s="29" e="29"/>
+   <method old="createLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="createLog" s="24" e="24"/>
+   <method old="get()Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="get(Ljava/lang/String;)Lcn/hutool/log/Log;" new="get"/>
+   <method old="getCurrentLogFactory()Lcn/hutool/log/LogFactory;" new="getCurrentLogFactory"/>
+   <method old="getLog(Ljava/lang/Class;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getLog(Ljava/lang/String;)Lcn/hutool/log/Log;" new="getLog"/>
+   <method old="getName()Ljava/lang/String;" new="getName"/>
+   <method old="setCurrentLogFactory(Lcn/hutool/log/LogFactory;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <method old="setCurrentLogFactory(Ljava/lang/Class;)Lcn/hutool/log/LogFactory;" new="setCurrentLogFactory"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+  </class>
+  <sources>
+   <source old="InternalJSONUtil.java" new="ja"/>
+   <source old="JSONArray.java" new="na"/>
+   <source old="JSONConfig.java" new="ya"/>
+   <source old="JSONConverter.java" new="sa"/>
+   <source old="JSONException.java" new="ea"/>
+   <source old="JSONNull.java" new="ua"/>
+   <source old="JSONObject.java" new="za"/>
+   <source old="JSONObjectIter.java" new="ha"/>
+   <source old="JSONStrFormater.java" new="fa"/>
+   <source old="JSONSupport.java" new="qa"/>
+   <source old="JSONUtil.java" new="ba"/>
+   <source old="XML.java" new="ka"/>
+   <source old="XMLTokener.java" new="ra"/>
+   <source old="JSONTokener.java" new="pa"/>
+   <source old="GlobalSerializeMapping.java" new="ca"/>
+   <source old="GlobalLogFactory.java" new="oa"/>
+   <source old="StaticLog.java" new="wa"/>
+   <source old="ApacheCommonsLog.java" new="aa"/>
+   <source old="ApacheCommonsLog4JLog.java" new="ma"/>
+   <source old="ApacheCommonsLogFactory.java" new="ia"/>
+   <source old="ConsoleLog.java" new="la"/>
+   <source old="ConsoleLogFactory.java" new="ta"/>
+   <source old="JbossLog.java" new="va"/>
+   <source old="JbossLogFactory.java" new="da"/>
+   <source old="JdkLog.java" new="c"/>
+   <source old="JdkLogFactory.java" new="o"/>
+   <source old="Log4jLog.java" new="g"/>
+   <source old="Log4jLogFactory.java" new="j"/>
+   <source old="Log4j2Log.java" new="p"/>
+   <source old="Log4j2LogFactory.java" new="z"/>
+   <source old="Slf4jLog.java" new="m"/>
+   <source old="Slf4jLogFactory.java" new="x"/>
+   <source old="AbstractLog.java" new="r"/>
+   <source old="TinyLog.java" new="i"/>
+   <source old="TinyLogFactory.java" new="e"/>
+   <source old="LogFactory.java" new="y"/>
+   <source old="Level.java" new="d"/>
+   <source old="JSONGetter.java" new="l"/>
+   <source old="JSON.java" new="v"/>
+   <source old="JSONString.java" new="f"/>
+   <source old="JSONArraySerializer.java" new="k"/>
+   <source old="JSONDeserializer.java" new="w"/>
+   <source old="JSONObjectSerializer.java" new="n"/>
+   <source old="JSONSerializer.java" new="b"/>
+   <source old="Log.java" new="q"/>
+   <source old="ErrorLog.java" new="u"/>
+   <source old="WarnLog.java" new="a"/>
+   <source old="InfoLog.java" new="t"/>
+   <source old="DebugLog.java" new="h"/>
+   <source old="TraceLog.java" new="s"/>
+  </sources>
+  <lines>
+   <line l="167"/>
+   <line l="120"/>
+   <line l="223"/>
+   <line l="102"/>
+   <line l="25"/>
+   <line l="165"/>
+   <line l="46"/>
+   <line l="237"/>
+   <line l="169"/>
+   <line l="191"/>
+   <line l="226"/>
+   <line l="17"/>
+   <line l="238"/>
+   <line l="166"/>
+   <line l="145"/>
+   <line l="115"/>
+   <line l="74"/>
+   <line l="30"/>
+   <line l="202"/>
+   <line l="60"/>
+   <line l="3"/>
+   <line l="112"/>
+   <line l="73"/>
+   <line l="142"/>
+   <line l="55"/>
+   <line l="72"/>
+   <line l="222"/>
+   <line l="78"/>
+   <line l="178"/>
+   <line l="164"/>
+   <line l="199"/>
+   <line l="105"/>
+   <line l="225"/>
+   <line l="86"/>
+   <line l="32"/>
+   <line l="34"/>
+   <line l="121"/>
+   <line l="129"/>
+   <line l="23"/>
+   <line l="186"/>
+   <line l="232"/>
+   <line l="42"/>
+   <line l="31"/>
+   <line l="35"/>
+   <line l="95"/>
+   <line l="29"/>
+   <line l="133"/>
+   <line l="132"/>
+   <line l="53"/>
+   <line l="221"/>
+   <line l="181"/>
+   <line l="200"/>
+   <line l="84"/>
+   <line l="204"/>
+   <line l="21"/>
+   <line l="175"/>
+   <line l="9"/>
+   <line l="5"/>
+   <line l="170"/>
+   <line l="210"/>
+   <line l="224"/>
+   <line l="19"/>
+   <line l="177"/>
+   <line l="213"/>
+   <line l="236"/>
+   <line l="140"/>
+   <line l="28"/>
+   <line l="203"/>
+   <line l="107"/>
+   <line l="215"/>
+   <line l="155"/>
+   <line l="101"/>
+   <line l="7"/>
+   <line l="125"/>
+   <line l="162"/>
+   <line l="59"/>
+   <line l="154"/>
+   <line l="197"/>
+   <line l="123"/>
+   <line l="148"/>
+   <line l="122"/>
+   <line l="47"/>
+   <line l="144"/>
+   <line l="212"/>
+   <line l="100"/>
+   <line l="176"/>
+   <line l="230"/>
+   <line l="126"/>
+   <line l="2"/>
+   <line l="96"/>
+   <line l="51"/>
+   <line l="91"/>
+   <line l="39"/>
+   <line l="16"/>
+   <line l="228"/>
+   <line l="239"/>
+   <line l="153"/>
+   <line l="180"/>
+   <line l="139"/>
+   <line l="214"/>
+   <line l="184"/>
+   <line l="206"/>
+   <line l="94"/>
+   <line l="81"/>
+   <line l="171"/>
+   <line l="27"/>
+   <line l="151"/>
+   <line l="134"/>
+   <line l="85"/>
+   <line l="83"/>
+   <line l="80"/>
+   <line l="160"/>
+   <line l="127"/>
+   <line l="183"/>
+   <line l="66"/>
+   <line l="48"/>
+   <line l="118"/>
+   <line l="143"/>
+   <line l="131"/>
+   <line l="241"/>
+   <line l="20"/>
+   <line l="89"/>
+   <line l="57"/>
+   <line l="163"/>
+   <line l="244"/>
+   <line l="70"/>
+   <line l="79"/>
+   <line l="192"/>
+   <line l="10"/>
+   <line l="146"/>
+   <line l="108"/>
+   <line l="98"/>
+   <line l="12"/>
+   <line l="116"/>
+   <line l="75"/>
+   <line l="77"/>
+   <line l="130"/>
+   <line l="201"/>
+   <line l="156"/>
+   <line l="136"/>
+   <line l="141"/>
+   <line l="36"/>
+   <line l="43"/>
+   <line l="111"/>
+   <line l="179"/>
+   <line l="147"/>
+   <line l="185"/>
+   <line l="209"/>
+   <line l="231"/>
+   <line l="208"/>
+   <line l="152"/>
+   <line l="37"/>
+   <line l="92"/>
+   <line l="135"/>
+   <line l="219"/>
+   <line l="38"/>
+   <line l="82"/>
+   <line l="117"/>
+   <line l="90"/>
+   <line l="158"/>
+   <line l="114"/>
+   <line l="149"/>
+   <line l="62"/>
+   <line l="174"/>
+   <line l="233"/>
+   <line l="69"/>
+   <line l="71"/>
+   <line l="97"/>
+   <line l="1"/>
+   <line l="187"/>
+   <line l="157"/>
+   <line l="190"/>
+   <line l="211"/>
+   <line l="227"/>
+   <line l="65"/>
+   <line l="56"/>
+   <line l="6"/>
+   <line l="235"/>
+   <line l="76"/>
+   <line l="220"/>
+   <line l="61"/>
+   <line l="138"/>
+   <line l="182"/>
+   <line l="229"/>
+   <line l="242"/>
+   <line l="41"/>
+   <line l="44"/>
+   <line l="240"/>
+   <line l="172"/>
+   <line l="50"/>
+   <line l="103"/>
+   <line l="119"/>
+   <line l="40"/>
+   <line l="45"/>
+   <line l="4"/>
+   <line l="234"/>
+   <line l="217"/>
+   <line l="188"/>
+   <line l="33"/>
+   <line l="68"/>
+   <line l="8"/>
+   <line l="109"/>
+   <line l="13"/>
+   <line l="0"/>
+   <line l="18"/>
+   <line l="245"/>
+   <line l="22"/>
+   <line l="207"/>
+   <line l="58"/>
+   <line l="196"/>
+   <line l="52"/>
+   <line l="15"/>
+   <line l="26"/>
+   <line l="99"/>
+   <line l="54"/>
+   <line l="218"/>
+   <line l="205"/>
+   <line l="24"/>
+   <line l="49"/>
+   <line l="150"/>
+   <line l="106"/>
+   <line l="159"/>
+   <line l="104"/>
+   <line l="93"/>
+   <line l="63"/>
+   <line l="161"/>
+   <line l="198"/>
+   <line l="193"/>
+   <line l="195"/>
+   <line l="11"/>
+   <line l="67"/>
+   <line l="137"/>
+   <line l="113"/>
+   <line l="243"/>
+   <line l="124"/>
+   <line l="110"/>
+   <line l="189"/>
+   <line l="168"/>
+   <line l="64"/>
+   <line l="173"/>
+   <line l="87"/>
+   <line l="88"/>
+   <line l="14"/>
+   <line l="194"/>
+   <line l="216"/>
+   <line l="128"/>
+   <line l="409"/>
+   <line l="267"/>
+   <line l="358"/>
+   <line l="310"/>
+   <line l="296"/>
+   <line l="421"/>
+   <line l="415"/>
+   <line l="426"/>
+   <line l="312"/>
+   <line l="285"/>
+   <line l="436"/>
+   <line l="334"/>
+   <line l="405"/>
+   <line l="433"/>
+   <line l="446"/>
+   <line l="257"/>
+   <line l="269"/>
+   <line l="298"/>
+   <line l="392"/>
+   <line l="261"/>
+   <line l="272"/>
+   <line l="327"/>
+   <line l="284"/>
+   <line l="381"/>
+   <line l="317"/>
+   <line l="256"/>
+   <line l="354"/>
+   <line l="373"/>
+   <line l="271"/>
+   <line l="445"/>
+   <line l="289"/>
+   <line l="341"/>
+   <line l="376"/>
+   <line l="401"/>
+   <line l="333"/>
+   <line l="340"/>
+   <line l="308"/>
+   <line l="380"/>
+   <line l="447"/>
+   <line l="356"/>
+   <line l="331"/>
+   <line l="295"/>
+   <line l="379"/>
+   <line l="355"/>
+   <line l="299"/>
+   <line l="260"/>
+   <line l="441"/>
+   <line l="440"/>
+   <line l="389"/>
+   <line l="321"/>
+   <line l="425"/>
+   <line l="385"/>
+   <line l="258"/>
+   <line l="307"/>
+   <line l="328"/>
+   <line l="442"/>
+   <line l="320"/>
+   <line l="266"/>
+   <line l="293"/>
+   <line l="371"/>
+   <line l="360"/>
+   <line l="329"/>
+   <line l="278"/>
+   <line l="275"/>
+   <line l="249"/>
+   <line l="414"/>
+   <line l="250"/>
+   <line l="393"/>
+   <line l="411"/>
+   <line l="288"/>
+   <line l="404"/>
+   <line l="439"/>
+   <line l="367"/>
+   <line l="382"/>
+   <line l="309"/>
+   <line l="432"/>
+   <line l="443"/>
+   <line l="423"/>
+   <line l="431"/>
+   <line l="407"/>
+   <line l="247"/>
+   <line l="306"/>
+   <line l="316"/>
+   <line l="300"/>
+   <line l="418"/>
+   <line l="342"/>
+   <line l="270"/>
+   <line l="369"/>
+   <line l="254"/>
+   <line l="395"/>
+   <line l="430"/>
+   <line l="277"/>
+   <line l="335"/>
+   <line l="311"/>
+   <line l="394"/>
+   <line l="413"/>
+   <line l="378"/>
+   <line l="370"/>
+   <line l="406"/>
+   <line l="332"/>
+   <line l="391"/>
+   <line l="273"/>
+   <line l="396"/>
+   <line l="345"/>
+   <line l="268"/>
+   <line l="402"/>
+   <line l="352"/>
+   <line l="259"/>
+   <line l="252"/>
+   <line l="338"/>
+   <line l="350"/>
+   <line l="287"/>
+   <line l="343"/>
+   <line l="437"/>
+   <line l="325"/>
+   <line l="416"/>
+   <line l="282"/>
+   <line l="410"/>
+   <line l="276"/>
+   <line l="403"/>
+   <line l="302"/>
+   <line l="357"/>
+   <line l="274"/>
+   <line l="251"/>
+   <line l="265"/>
+   <line l="264"/>
+   <line l="313"/>
+   <line l="383"/>
+   <line l="286"/>
+   <line l="337"/>
+   <line l="364"/>
+   <line l="279"/>
+   <line l="324"/>
+   <line l="444"/>
+   <line l="346"/>
+   <line l="417"/>
+   <line l="318"/>
+   <line l="384"/>
+   <line l="248"/>
+   <line l="301"/>
+   <line l="315"/>
+   <line l="291"/>
+   <line l="419"/>
+   <line l="281"/>
+   <line l="438"/>
+   <line l="388"/>
+   <line l="361"/>
+   <line l="348"/>
+   <line l="374"/>
+   <line l="429"/>
+   <line l="351"/>
+   <line l="387"/>
+   <line l="420"/>
+   <line l="322"/>
+   <line l="253"/>
+   <line l="280"/>
+   <line l="372"/>
+   <line l="435"/>
+   <line l="365"/>
+   <line l="339"/>
+   <line l="428"/>
+   <line l="255"/>
+   <line l="262"/>
+   <line l="353"/>
+   <line l="399"/>
+   <line l="366"/>
+   <line l="304"/>
+   <line l="408"/>
+   <line l="283"/>
+   <line l="422"/>
+   <line l="398"/>
+   <line l="303"/>
+   <line l="336"/>
+   <line l="323"/>
+   <line l="344"/>
+   <line l="362"/>
+   <line l="359"/>
+   <line l="314"/>
+   <line l="246"/>
+   <line l="375"/>
+   <line l="326"/>
+   <line l="368"/>
+   <line l="347"/>
+   <line l="319"/>
+   <line l="400"/>
+   <line l="390"/>
+   <line l="294"/>
+   <line l="397"/>
+   <line l="363"/>
+   <line l="377"/>
+   <line l="297"/>
+   <line l="427"/>
+   <line l="330"/>
+   <line l="424"/>
+   <line l="434"/>
+   <line l="412"/>
+   <line l="292"/>
+   <line l="349"/>
+   <line l="386"/>
+   <line l="290"/>
+   <line l="263"/>
+   <line l="305"/>
+   <line l="614"/>
+   <line l="475"/>
+   <line l="647"/>
+   <line l="491"/>
+   <line l="641"/>
+   <line l="450"/>
+   <line l="448"/>
+   <line l="606"/>
+   <line l="480"/>
+   <line l="537"/>
+   <line l="617"/>
+   <line l="468"/>
+   <line l="479"/>
+   <line l="628"/>
+   <line l="575"/>
+   <line l="582"/>
+   <line l="634"/>
+   <line l="484"/>
+   <line l="507"/>
+   <line l="487"/>
+   <line l="567"/>
+   <line l="477"/>
+   <line l="520"/>
+   <line l="492"/>
+   <line l="551"/>
+   <line l="635"/>
+   <line l="556"/>
+   <line l="625"/>
+   <line l="588"/>
+   <line l="451"/>
+   <line l="482"/>
+   <line l="629"/>
+   <line l="646"/>
+   <line l="612"/>
+   <line l="605"/>
+   <line l="638"/>
+   <line l="548"/>
+   <line l="581"/>
+   <line l="578"/>
+   <line l="469"/>
+   <line l="473"/>
+   <line l="569"/>
+   <line l="500"/>
+   <line l="558"/>
+   <line l="503"/>
+   <line l="463"/>
+   <line l="465"/>
+   <line l="591"/>
+   <line l="600"/>
+   <line l="570"/>
+   <line l="602"/>
+   <line l="618"/>
+   <line l="514"/>
+   <line l="589"/>
+   <line l="493"/>
+   <line l="458"/>
+   <line l="486"/>
+   <line l="525"/>
+   <line l="561"/>
+   <line l="457"/>
+   <line l="564"/>
+   <line l="555"/>
+   <line l="542"/>
+   <line l="579"/>
+   <line l="547"/>
+   <line l="619"/>
+   <line l="550"/>
+   <line l="645"/>
+   <line l="639"/>
+   <line l="535"/>
+   <line l="490"/>
+   <line l="509"/>
+   <line l="615"/>
+   <line l="506"/>
+   <line l="521"/>
+   <line l="502"/>
+   <line l="603"/>
+   <line l="538"/>
+   <line l="533"/>
+   <line l="519"/>
+   <line l="543"/>
+   <line l="599"/>
+   <line l="604"/>
+   <line l="637"/>
+   <line l="460"/>
+   <line l="516"/>
+   <line l="631"/>
+   <line l="449"/>
+   <line l="511"/>
+   <line l="456"/>
+   <line l="549"/>
+   <line l="633"/>
+   <line l="499"/>
+   <line l="467"/>
+   <line l="608"/>
+   <line l="495"/>
+   <line l="453"/>
+   <line l="585"/>
+   <line l="554"/>
+   <line l="485"/>
+   <line l="508"/>
+   <line l="483"/>
+   <line l="643"/>
+   <line l="626"/>
+   <line l="488"/>
+   <line l="587"/>
+   <line l="497"/>
+   <line l="546"/>
+   <line l="583"/>
+   <line l="597"/>
+   <line l="622"/>
+   <line l="532"/>
+   <line l="557"/>
+   <line l="562"/>
+   <line l="504"/>
+   <line l="568"/>
+   <line l="472"/>
+   <line l="586"/>
+   <line l="496"/>
+   <line l="627"/>
+   <line l="498"/>
+   <line l="563"/>
+   <line l="611"/>
+   <line l="455"/>
+   <line l="522"/>
+   <line l="552"/>
+   <line l="464"/>
+   <line l="621"/>
+   <line l="544"/>
+   <line l="540"/>
+   <line l="577"/>
+   <line l="607"/>
+   <line l="636"/>
+   <line l="571"/>
+   <line l="512"/>
+   <line l="489"/>
+   <line l="462"/>
+   <line l="515"/>
+   <line l="536"/>
+   <line l="505"/>
+   <line l="613"/>
+   <line l="529"/>
+   <line l="526"/>
+   <line l="592"/>
+   <line l="459"/>
+   <line l="595"/>
+   <line l="566"/>
+   <line l="466"/>
+   <line l="601"/>
+   <line l="584"/>
+   <line l="610"/>
+   <line l="609"/>
+   <line l="573"/>
+   <line l="620"/>
+   <line l="576"/>
+   <line l="478"/>
+   <line l="518"/>
+   <line l="624"/>
+   <line l="474"/>
+   <line l="539"/>
+   <line l="545"/>
+   <line l="494"/>
+   <line l="560"/>
+   <line l="572"/>
+   <line l="596"/>
+   <line l="553"/>
+   <line l="461"/>
+   <line l="530"/>
+   <line l="524"/>
+   <line l="476"/>
+   <line l="513"/>
+   <line l="528"/>
+   <line l="470"/>
+   <line l="644"/>
+   <line l="630"/>
+   <line l="452"/>
+   <line l="574"/>
+   <line l="517"/>
+   <line l="598"/>
+   <line l="541"/>
+   <line l="501"/>
+   <line l="454"/>
+   <line l="642"/>
+   <line l="580"/>
+   <line l="623"/>
+   <line l="565"/>
+   <line l="471"/>
+   <line l="510"/>
+   <line l="616"/>
+   <line l="481"/>
+   <line l="559"/>
+   <line l="534"/>
+   <line l="527"/>
+   <line l="523"/>
+   <line l="594"/>
+   <line l="590"/>
+   <line l="632"/>
+   <line l="640"/>
+   <line l="593"/>
+   <line l="531"/>
+   <line l="915"/>
+   <line l="929"/>
+   <line l="797"/>
+   <line l="872"/>
+   <line l="871"/>
+   <line l="737"/>
+   <line l="874"/>
+   <line l="726"/>
+   <line l="836"/>
+   <line l="675"/>
+   <line l="730"/>
+   <line l="701"/>
+   <line l="912"/>
+   <line l="878"/>
+   <line l="778"/>
+   <line l="942"/>
+   <line l="860"/>
+   <line l="805"/>
+   <line l="692"/>
+   <line l="655"/>
+   <line l="968"/>
+   <line l="673"/>
+   <line l="937"/>
+   <line l="891"/>
+   <line l="683"/>
+   <line l="985"/>
+   <line l="650"/>
+   <line l="830"/>
+   <line l="970"/>
+   <line l="911"/>
+   <line l="987"/>
+   <line l="994"/>
+   <line l="934"/>
+   <line l="864"/>
+   <line l="893"/>
+   <line l="963"/>
+   <line l="781"/>
+   <line l="702"/>
+   <line l="828"/>
+   <line l="978"/>
+   <line l="852"/>
+   <line l="992"/>
+   <line l="764"/>
+   <line l="749"/>
+   <line l="776"/>
+   <line l="931"/>
+   <line l="858"/>
+   <line l="882"/>
+   <line l="740"/>
+   <line l="671"/>
+   <line l="819"/>
+   <line l="930"/>
+   <line l="928"/>
+   <line l="669"/>
+   <line l="939"/>
+   <line l="844"/>
+   <line l="959"/>
+   <line l="817"/>
+   <line l="715"/>
+   <line l="705"/>
+   <line l="668"/>
+   <line l="896"/>
+   <line l="652"/>
+   <line l="948"/>
+   <line l="823"/>
+   <line l="649"/>
+   <line l="890"/>
+   <line l="996"/>
+   <line l="792"/>
+   <line l="988"/>
+   <line l="789"/>
+   <line l="944"/>
+   <line l="957"/>
+   <line l="940"/>
+   <line l="654"/>
+   <line l="691"/>
+   <line l="843"/>
+   <line l="971"/>
+   <line l="868"/>
+   <line l="713"/>
+   <line l="810"/>
+   <line l="941"/>
+   <line l="763"/>
+   <line l="990"/>
+   <line l="785"/>
+   <line l="791"/>
+   <line l="656"/>
+   <line l="824"/>
+   <line l="800"/>
+   <line l="876"/>
+   <line l="710"/>
+   <line l="877"/>
+   <line l="651"/>
+   <line l="886"/>
+   <line l="822"/>
+   <line l="900"/>
+   <line l="922"/>
+   <line l="1002"/>
+   <line l="674"/>
+   <line l="921"/>
+   <line l="699"/>
+   <line l="895"/>
+   <line l="865"/>
+   <line l="719"/>
+   <line l="795"/>
+   <line l="1004"/>
+   <line l="793"/>
+   <line l="885"/>
+   <line l="956"/>
+   <line l="812"/>
+   <line l="847"/>
+   <line l="898"/>
+   <line l="927"/>
+   <line l="774"/>
+   <line l="801"/>
+   <line l="888"/>
+   <line l="879"/>
+   <line l="832"/>
+   <line l="672"/>
+   <line l="745"/>
+   <line l="709"/>
+   <line l="680"/>
+   <line l="751"/>
+   <line l="892"/>
+   <line l="835"/>
+   <line l="834"/>
+   <line l="720"/>
+   <line l="866"/>
+   <line l="1000"/>
+   <line l="964"/>
+   <line l="952"/>
+   <line l="984"/>
+   <line l="786"/>
+   <line l="660"/>
+   <line l="818"/>
+   <line l="796"/>
+   <line l="697"/>
+   <line l="953"/>
+   <line l="919"/>
+   <line l="679"/>
+   <line l="716"/>
+   <line l="918"/>
+   <line l="743"/>
+   <line l="999"/>
+   <line l="677"/>
+   <line l="840"/>
+   <line l="997"/>
+   <line l="969"/>
+   <line l="698"/>
+   <line l="687"/>
+   <line l="897"/>
+   <line l="981"/>
+   <line l="993"/>
+   <line l="833"/>
+   <line l="943"/>
+   <line l="772"/>
+   <line l="913"/>
+   <line l="901"/>
+   <line l="961"/>
+   <line l="894"/>
+   <line l="803"/>
+   <line l="662"/>
+   <line l="837"/>
+   <line l="721"/>
+   <line l="829"/>
+   <line l="703"/>
+   <line l="714"/>
+   <line l="916"/>
+   <line l="1003"/>
+   <line l="904"/>
+   <line l="991"/>
+   <line l="811"/>
+   <line l="732"/>
+   <line l="775"/>
+   <line l="951"/>
+   <line l="711"/>
+   <line l="770"/>
+   <line l="688"/>
+   <line l="831"/>
+   <line l="842"/>
+   <line l="945"/>
+   <line l="728"/>
+   <line l="925"/>
+   <line l="748"/>
+   <line l="724"/>
+   <line l="742"/>
+   <line l="759"/>
+   <line l="933"/>
+   <line l="753"/>
+   <line l="704"/>
+   <line l="869"/>
+   <line l="787"/>
+   <line l="862"/>
+   <line l="954"/>
+   <line l="914"/>
+   <line l="910"/>
+   <line l="681"/>
+   <line l="771"/>
+   <line l="798"/>
+   <line l="1001"/>
+   <line l="938"/>
+   <line l="826"/>
+   <line l="735"/>
+   <line l="706"/>
+   <line l="731"/>
+   <line l="977"/>
+   <line l="758"/>
+   <line l="769"/>
+   <line l="873"/>
+   <line l="880"/>
+   <line l="917"/>
+   <line l="665"/>
+   <line l="950"/>
+   <line l="648"/>
+   <line l="756"/>
+   <line l="975"/>
+   <line l="712"/>
+   <line l="708"/>
+   <line l="905"/>
+   <line l="802"/>
+   <line l="965"/>
+   <line l="920"/>
+   <line l="845"/>
+   <line l="815"/>
+   <line l="986"/>
+   <line l="686"/>
+   <line l="983"/>
+   <line l="734"/>
+   <line l="998"/>
+   <line l="926"/>
+   <line l="989"/>
+   <line l="889"/>
+   <line l="790"/>
+   <line l="685"/>
+   <line l="782"/>
+   <line l="946"/>
+   <line l="773"/>
+   <line l="935"/>
+   <line l="664"/>
+   <line l="700"/>
+   <line l="750"/>
+   <line l="777"/>
+   <line l="857"/>
+   <line l="741"/>
+   <line l="825"/>
+   <line l="820"/>
+   <line l="694"/>
+   <line l="949"/>
+   <line l="838"/>
+   <line l="659"/>
+   <line l="752"/>
+   <line l="707"/>
+   <line l="767"/>
+   <line l="693"/>
+   <line l="875"/>
+   <line l="849"/>
+   <line l="979"/>
+   <line l="861"/>
+   <line l="733"/>
+   <line l="966"/>
+   <line l="747"/>
+   <line l="736"/>
+   <line l="976"/>
+   <line l="761"/>
+   <line l="718"/>
+   <line l="696"/>
+   <line l="723"/>
+   <line l="883"/>
+   <line l="856"/>
+   <line l="967"/>
+   <line l="809"/>
+   <line l="813"/>
+   <line l="863"/>
+   <line l="666"/>
+   <line l="902"/>
+   <line l="717"/>
+   <line l="808"/>
+   <line l="908"/>
+   <line l="906"/>
+   <line l="784"/>
+   <line l="982"/>
+   <line l="658"/>
+   <line l="729"/>
+   <line l="806"/>
+   <line l="746"/>
+   <line l="848"/>
+   <line l="881"/>
+   <line l="765"/>
+   <line l="814"/>
+   <line l="947"/>
+   <line l="909"/>
+   <line l="846"/>
+   <line l="973"/>
+   <line l="754"/>
+   <line l="788"/>
+   <line l="663"/>
+   <line l="855"/>
+   <line l="722"/>
+   <line l="816"/>
+   <line l="859"/>
+   <line l="899"/>
+   <line l="760"/>
+   <line l="667"/>
+   <line l="955"/>
+   <line l="907"/>
+   <line l="974"/>
+   <line l="738"/>
+   <line l="689"/>
+   <line l="794"/>
+   <line l="932"/>
+   <line l="960"/>
+   <line l="958"/>
+   <line l="887"/>
+   <line l="739"/>
+   <line l="678"/>
+   <line l="670"/>
+   <line l="804"/>
+   <line l="980"/>
+   <line l="676"/>
+   <line l="762"/>
+   <line l="867"/>
+   <line l="972"/>
+   <line l="827"/>
+   <line l="841"/>
+   <line l="884"/>
+   <line l="807"/>
+   <line l="653"/>
+   <line l="757"/>
+   <line l="850"/>
+   <line l="661"/>
+   <line l="695"/>
+   <line l="851"/>
+   <line l="682"/>
+   <line l="657"/>
+   <line l="854"/>
+   <line l="870"/>
+   <line l="995"/>
+   <line l="780"/>
+   <line l="923"/>
+   <line l="962"/>
+   <line l="727"/>
+   <line l="779"/>
+   <line l="924"/>
+   <line l="755"/>
+   <line l="744"/>
+   <line l="768"/>
+   <line l="766"/>
+   <line l="799"/>
+   <line l="821"/>
+   <line l="839"/>
+   <line l="936"/>
+   <line l="853"/>
+   <line l="684"/>
+   <line l="903"/>
+   <line l="783"/>
+   <line l="690"/>
+   <line l="725"/>
+  </lines>
+ </mapping>
+</allatori>

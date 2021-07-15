@@ -11,6 +11,7 @@ import java.util.zip.ZipOutputStream;
 
 import javassist.ClassPool;
 import javassist.CtClass;
+import javassist.CtField;
 import javassist.CtMethod;
 
 public class Main {
@@ -78,6 +79,27 @@ public class Main {
 					CtClass cl = pool.makeClass(new java.io.ByteArrayInputStream(data));
 					CtMethod[] ms = cl.getDeclaredMethods();
 					boolean needRewriteFlag = false;
+					
+					if(!cl.getName().startsWith("com.allatori.eclipse")) {
+						for (CtMethod fMethod : cl.getMethods()) {
+							if(!fMethod.isEmpty() && "String".equals(fMethod.getReturnType().getSimpleName()) 
+									&& cl.getName().equals(fMethod.getDeclaringClass().getName()) 
+									) {
+								String code = "if($_!=null && !$_.isEmpty()){"
+										+ "if($_.indexOf(\"www.allatori.com\")!=-1){"
+										+ "$_ = \"https://blog.lqs1848.top\";}"
+										//+ "if($_.indexOf(\"Obfuscation by\")!=-1){"
+										//+ "System.out.println($_);"
+										//+ "$_ = \"Obfuscation by\";}"
+										+ "if($_.indexOf(\"Allatori Obfuscator\")!=-1){"
+										+ "$_ = \"http://lqs1848.gitee.io\";}"
+										+ "; }";
+								fMethod.insertAfter(code);
+								needRewriteFlag = true;
+							}
+						}//for
+					}
+					
 					for (CtMethod fMethod : ms) {
 						if (!fMethod.isEmpty() && fMethod.getName().equals("THIS_IS_DEMO_VERSION_NOT_FOR_COMMERCIAL_USE")) {
 							if (fMethod.getLongName().endsWith("(java.lang.String)")
@@ -86,7 +108,7 @@ public class Main {
 								needRewriteFlag = true;
 							} else if (fMethod.getLongName().endsWith("()")
 									&& "String".equals(fMethod.getReturnType().getSimpleName())) {
-								fMethod.insertAfter("if($_!=null&&!$_.isEmpty()&&$_.indexOf(\"Obfuscation by Allatori\")!=-1){\n" + copyrightStatement + "}");
+								fMethod.insertAfter("if($_!=null&&!$_.isEmpty()&&$_.indexOf(\"Obfuscation by\")!=-1){\n" + copyrightStatement + "}");
 								needRewriteFlag = true;
 							}
 						}
