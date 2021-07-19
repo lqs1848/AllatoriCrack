@@ -3,7 +3,16 @@
 
 
 
-#### 基于当前最新的 7.6 版本
+#### 基于 7.6 版本  
+
+为啥没更新最新的版本？
+7.7
+- 只是加了java15的支持 
+7.8 
+- added remove-annotations property
+- applying unique-renaming for selected classes with apply2class
+更新不多 下次再说吧~
+
 
 **简介:**
 
