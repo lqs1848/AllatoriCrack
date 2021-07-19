@@ -5,18 +5,18 @@
 
 #### 基于 7.6 版本  
 
-为啥没更新最新的版本？
-**7.7**
-- 只是加了java15的支持 
-**7.8**
-- added remove-annotations property
-- applying unique-renaming for selected classes with apply2class
-更新不多 下次再说吧~
+为啥没更新最新的版本？<br>
+**7.7**<br>
+只是加了java15的支持 <br>
+**7.8**<br>
+added remove-annotations property <br>
+applying unique-renaming for selected classes with apply2class <br>
+更新不多 下次再说吧~<br>
 
 
 **简介:**
 
-​	破解 Java 混淆工具 Allatori [官网](http://www.allatori.com/)	并进行了部分加密功能的小修改
+​	破解 Java 混淆工具 [Allatori](http://www.allatori.com/)	并进行了部分加密功能的小修改
 
 
 
