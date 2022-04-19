@@ -6,12 +6,9 @@
 #### 基于 7.6 版本  
 
 为啥没更新最新的版本？<br>
-**7.7**<br>
-只是加了java15的支持 <br>
-**7.8**<br>
-added remove-annotations property <br>
-applying unique-renaming for selected classes with apply2class <br>
-更新不多 下次再说吧~<br>
+粗略的测试了下 8.1版本也可以替换 <br>
+替换 目录下的allatori.jar即可 <br>
+
 
 
 **简介:**
